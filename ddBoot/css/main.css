@@ -37,9 +37,9 @@ h2 {
 	
 }
 #header {
-	background-color:transparent;
+	background-color:#222;
 	 
-	background: url("images/rocketTilesLowContrast.jpg");
+	background: url('images/rocketTiles.jpg');
 	background-repeat:repeat-x;
 	background-repeat:repeat-y;
 	padding-left:40px;
