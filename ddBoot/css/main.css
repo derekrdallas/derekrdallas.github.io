@@ -1,5 +1,5 @@
 body{
-	  background-image: url("rocketTilesLowContrast.jpg");
+	 
 	
 }
 
@@ -37,9 +37,13 @@ h2 {
 	
 }
 #header {
-	background-color:#222;
+	background-color:transparent;
+	 
+	background: url("images/rocketTilesLowContrast.jpg");
+	background-repeat:repeat-x;
+	background-repeat:repeat-y;
 	padding-left:40px;
-	width:parent;
+	
 	
 }
 hgroup{
@@ -48,6 +52,9 @@ hgroup{
 
 #contentLeft{
 	background-color:#333;
+	background-image: url("images/rocketTilesLowContrast.jpg");
+	background-repeat:repeat-x;
+	background-repeat:repeat-y;
 	color:#fff;
 	padding-left:40px;
 	
@@ -337,4 +344,3 @@ section td{
 section th{
  font-size: 1.0em;
  font-weight: 600;
-	
