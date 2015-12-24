@@ -39,7 +39,7 @@ h2 {
 #header {
 	background-color:#222;
 	 
-	background: url('images/rocketTiles.jpg');
+	background-image: url('images/rocketTiles.jpg');
 	background-repeat:repeat-x;
 	background-repeat:repeat-y;
 	padding-left:40px;
