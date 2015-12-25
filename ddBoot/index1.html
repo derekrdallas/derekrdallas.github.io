@@ -47,16 +47,27 @@
 <div class="row" id="navContainer">
 	<div class="col-md-12" id="nav">
     
-    <ul>
-      <li class="current">Home</li>
-        <li>Courses</li>
-        <li>Portfolio</li>
-        <li>About</li>
-    </ul>
-    
-    </div><!-- end nav -->
+   		<div class="dropdown">
+			 <ul>
+      			<li class="current">Home</li>
+        		<li>Courses</li>
 
-
+  				<button id="portfolioButton" class="btn 	btn-default dropdown-toggle" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Portfolio
+    				<span class="caret"></span>
+ 				</button>
+  					<ul id="dropMenu" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    					<li><a href="#">2D Animation</a></li>
+    					<li><a href="#">3D Animation</a></li>
+    					<li><a href="#">3D print</a></li>
+    					<li><a href="#">Motion Graphics</a></li>
+  					</ul>
+  
+       			<li>About</li>
+    		</ul>
+  
+		</div><!-- end dropdown -->
+     </div><!-- end nav -->
 </div><!-- end navContainer -->
 
  

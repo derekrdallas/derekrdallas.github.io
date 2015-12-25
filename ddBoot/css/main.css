@@ -129,6 +129,9 @@ hgroup{
 #nav li {
 	color:#888;
 	display: inline;
+	font-family: 'Raleway', sans-serif;
+	font-size: 0.9em;
+	font-weight: 400;
 	padding-left:0px;
 	padding-right:40px;
 	text-align: left;
@@ -165,6 +168,44 @@ hgroup{
 	font-weight: 400;
 	text-decoration: none;
 	}
+
+/*https://bootstrapbay.com/blog/bootstrap-button-styles/ */	
+.btn{
+background-color:transparent;
+border: 0 none;
+border-radius:0;
+color:#888;
+font-family: 'Raleway', sans-serif;
+margin-left:-10px;
+margin-right:30px;
+}
+
+#dropMenu {
+	background-color:#000;
+	height:150px;
+	margin:0;
+	padding:0;
+	width:100px;
+	
+}
+
+#dropMenu a{
+	color:#65c8c6;
+	font-family: 'Raleway', sans-serif;
+	margin:0;
+	padding:0;
+	
+	
+}
+#dropMenu a:hover{
+	color:#C8C265;
+	font-family: 'Raleway', sans-serif;
+	margin:0;
+	padding:0;
+	
+}
+	
+	
 
 .boldTitles {
 	color: #C8C265;
