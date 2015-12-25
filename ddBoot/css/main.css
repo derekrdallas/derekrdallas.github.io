@@ -140,26 +140,27 @@ hgroup{
 
 
  #nav a {
-	color: #F1F1F2;
+	color:#65c8c6;
+	display: inline;
 	font-family: 'Raleway', sans-serif;
 	font-size: 0.9em;
 	font-weight: 400;
-	line-height: 15px;
-	width: 3.5em;
-	text-align: center;
-	text-decoration: none;
-	text-shadow: 1px 0px #000;
+	padding-left:0px;
+	padding-right:40px;
+	text-align: left;
+	text-indent: none;
 	}
 
 #nav a:hover {
-	/*background-color: #333;*/
-	color: #65C8C6;
-	float: left;
+	color: #C8C265;
+	display: inline;
 	font-family: 'Raleway', sans-serif;
+	font-size: 0.9em;
 	font-weight: 400;
-	line-height: 15px;
-	width: 3.5em;
-	text-decoration: none;
+	padding-left:0px;
+	padding-right:40px;
+	text-align: left;
+	text-indent: none;
 	}
 
  #nav .current {
@@ -186,7 +187,7 @@ margin-right:30px;
 	line-height:1em;
 	margin:0;
 	padding:0;
-	width:100px;
+	width:25px;
 	}
 
 #dropMenu a{
@@ -198,6 +199,7 @@ margin-right:30px;
 	}
 	
 #dropMenu a:hover{
+	background-color:transparent;
 	color:#C8C265;
 	font-family: 'Raleway', sans-serif;
 	line-height:1em;
@@ -226,8 +228,7 @@ margin-right:30px;
 	margin-left: 0%;
 	letter-spacing:0.01em;
 	/*text-shadow: 1px 1px #222;*/
-}	
-
+}
 
 #footer {
 	background-color:transparent;
