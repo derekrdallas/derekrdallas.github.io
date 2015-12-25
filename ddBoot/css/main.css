@@ -183,27 +183,28 @@ margin-right:30px;
 #dropMenu {
 	background-color:#000;
 	height:150px;
+	line-height:1em;
 	margin:0;
 	padding:0;
 	width:100px;
-	
-}
+	}
 
 #dropMenu a{
 	color:#65c8c6;
 	font-family: 'Raleway', sans-serif;
+	line-height:1em;
 	margin:0;
 	padding:0;
+	}
 	
-	
-}
 #dropMenu a:hover{
 	color:#C8C265;
 	font-family: 'Raleway', sans-serif;
+	line-height:1em;
 	margin:0;
 	padding:0;
-	
-}
+	width:100px;
+	}
 	
 	
 
