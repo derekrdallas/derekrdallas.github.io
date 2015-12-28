@@ -229,6 +229,17 @@ margin-right:30px;
 	letter-spacing:0.01em;
 	/*text-shadow: 1px 1px #222;*/
 }
+.selfie{
+float:right;
+}
+
+figure {
+    display: inline;
+    margin-top: 3em;
+    margin-bottom: 5.0em;
+    margin-left: 40px;
+    margin-right: 40px;
+}
 
 #footer {
 	background-color:transparent;
