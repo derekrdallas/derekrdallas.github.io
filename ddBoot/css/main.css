@@ -1,7 +1,8 @@
 body{
-	background-image: url("PajamaGame.jpg");
-	/*background: -webkit-linear-gradient(#111,#111);*/
-	background-repeat:no-repeat;
+	/*background-image: url("PajamaGame.jpg");*/
+	background: -webkit-linear-gradient(#111,#111);
+	/*background-repeat:no-repeat;*/
+	/*background-color:#0A0D12;*/
 }
 
 
