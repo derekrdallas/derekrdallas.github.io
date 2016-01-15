@@ -1,0 +1,75 @@
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/*column colors
+#ddffff light blue colums 1 and 3
+#befafe blue columns 2 and 4*/
+
+
+.bgimage{
+	background-image:url(../images/header.jpg);
+	background-position:center center;
+	background-size:cover;
+	height:150px;
+}
+
+.ltblueColumn{
+background-color:#ddffff;
+height:31em;	
+}
+
+.drkblueColumn{
+background-color:#befafe;
+height:31em;	
+}
+
+body{
+	font-family: "Century Gothic", Arial, sans-serif;
+	font-size: 85%;
+	line-height: 1.5em;	
+}
+
+h1 {
+	font-size: 200%;
+	letter-spacing: 2px;
+	font-weight: lighter;
+	
+}
+
+h2 {
+	padding: 30px 35px 30px 10px;
+	font-size: 125%;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #366;
+	background: url(../images/smallbug.png) no-repeat right center;
+	height: 2.5em;
+	
+}
+
+header{
+	background-color:#B6DACB;/*soft green*/
+	color: #000;
+	height:21em;
+	
+	
+}
+
+.imgLeft{
+	float:left;
+	
+}
+
+.footer{
+background-color:#B6DACB;/*soft green*/	
+height:2em;
+padding: 30px 35px 30px 10px;	
+}
+
+
+ul{
+list-style: none;
+}
