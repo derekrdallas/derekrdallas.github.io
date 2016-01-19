@@ -2,12 +2,16 @@
 * {
 	padding: 0;
 	margin: 0;
+	border-radius: 0;
 }
 
 /*column colors
 #ddffff light blue colums 1 and 3
 #befafe blue columns 2 and 4*/
-
+.containerWidth{
+	width:auto;	
+	
+}
 
 .bgimage{
 	background-image:url(../images/header.jpg);
@@ -18,12 +22,14 @@
 
 .ltblueColumn{
 background-color:#ddffff;
-height:31em;	
+height:41em;
+margin-top:	-20px;
 }
 
 .drkblueColumn{
 background-color:#befafe;
-height:31em;	
+height:41em;
+margin-top:	-20px;	
 }
 
 body{
@@ -54,6 +60,7 @@ header{
 	background-color:#B6DACB;/*soft green*/
 	color: #000;
 	height:21em;
+	margin-top:-20px;
 	
 	
 }
@@ -62,6 +69,20 @@ header{
 	float:left;
 	
 }
+nav{
+	background-color:#7bb022;
+}
+.nav-bar{
+	border-radius: 0px;
+	min-height:20px;
+}
+.btn{
+width:auto;
+margin-left:5px;
+margin-right:5px;	
+}
+
+
 
 .footer{
 background-color:#B6DACB;/*soft green*/	
@@ -72,4 +93,5 @@ padding: 30px 35px 30px 10px;
 
 ul{
 list-style: none;
+
 }
