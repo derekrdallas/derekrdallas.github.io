@@ -30,34 +30,21 @@
 
 		<div class="bgimage"> <p>&nbsp;</p> </div>
  			
-      <nav class="navbar">
-            	<ul class="list-inline">
-  					<li><a class="btn btn btn-link active" role="button" "href="web-careers5.html" >Web Career Information
-                    </a></li>
- 					<li><a class="btn btn-link " role="button" href="parkland-csit5.html">Parkland College 		
-                    CSIT</a></li>
-                    
- <!-- add these links to the drop down            
- 				 <ul>
-                    	<li>Computer parkland csit5- href="# your html page"</li>
-                        <li>Computer Science href="http://www.parkland.edu/Media/Website%20Resources/PDF/catalog/POS.pdf#nameddest=POS.indd:csit_as" 			   				
- Computer Technology Center href="http://www.csit.parkland.edu/ctc/"</li>
-                       
-                        <li>Data System & Dev.  href="http://www.parkland.edu/academics/departments/csit/dataSysDevelopment.aspx"</li>
-                        <li> Digital Media  href="http://www.parkland.edu/academics/departments/csit/digital.aspx"</li>
-                        <li> Network Administration and Support  href="http://www.parkland.edu/academics/departments/csit/networking.aspx"</li>
-                    
-                    
-                </ul>
- -->
-                    
-                    
-                    
-                    
-                    
-  				<li><a class="btn btn-link " role="button" href="webdev5.html">Web Development</a></li>
-				</ul>
-    		</nav> 
+      <nav class="navbar dropdown">
+      <button type="button" class="btn btn-link">Web Career Information</button>
+      <button  id="ParklandCSIT" type="button" data-toggle="dropdown" class="btn btn-link" aria-haspopup="true" aria-expanded="true">Parkland CSIT<span class="caret"></span></button>
+      	<ul class="dropdown-menu" aria-labelledby="ParklandCSIT">
+        	<li><a href="http://www.parkland.edu/Media/Website%20Resources/PDF/catalog/POS.pdf#nameddest=POS.indd:csit_as" title="Link to CSIT computer science .pdf" target="_blank">Computer Science</a></li>
+            <li><a href="http://www.csit.parkland.edu/ctc/" title="link to parkland college computer technology center" target="_blank">Computer Technology Center</a></li>
+            <li><a href="http://www.parkland.edu/academics/departments/csit/dataSysDevelopment.aspx" title="link to parkland college Data Systems and Development webpage" target="_blank">Data Systems and Development</a></li>
+            <li><a href="http://www.parkland.edu/academics/departments/csit/digital.aspx" title="Link to parkland college CSIT digital media" target="_blank">Digital Media</a></li>
+            <li><a href="http://www.parkland.edu/academics/departments/csit/networking.aspx" title="link to parkland College networking webpage" target="_blank">Network Administration and Support</a></li>
+        </ul>
+      
+      
+      <button type="button" class="btn btn-link">Web Development</button>
+            	
+      </nav> 
                   
     <header>
     	<h1>Have you Caught the Web Design Bug?</h1>
