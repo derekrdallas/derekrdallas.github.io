@@ -32,6 +32,12 @@ height:41em;
 margin-top:	-20px;	
 }
 
+
+.highlight{
+background-color:#FFF; 
+color:#000;	
+}
+
 body{
 	font-family: "Century Gothic", Arial, sans-serif;
 	font-size: 85%;
