@@ -1,0 +1,6 @@
+This is the link to the webpage notes for thhe doughnut shop midterm/ final webpage.
+https://docs.google.com/document/d/1lZ0TAAl2GZcMiemhyO8gPx2TR9m3MqfNeknMc1RNiMs/edit?usp=sharing
+
+This is the <iframe> code for the youtube video I want embedded into one of the web pages: :<iframe width="420" height="315" src="https://www.youtube.com/embed/aWMjUQFEGd0" frameborder="0" allowfullscreen></iframe>
+
+This is the video gallery content that can be used for an image gallery: http://www.menucool.com/javascript-image-slider

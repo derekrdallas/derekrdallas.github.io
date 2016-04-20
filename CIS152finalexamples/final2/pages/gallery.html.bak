@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Doughnut Delights - Menu</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+    <link href="../themes/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="../themes/js-image-slider.js" type="text/javascript"></script>
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+<div id="wrapper">
+		<div id="logo">
+			<h1><a href="#"></a></h1>
+
+  </div>
+	<div id="header">
+	</div>
+	<div id="menu">
+		<ul>
+			<li><a href="../index.html" accesskey="1" title="">Home</a></li>
+			<li><a href="menu.html" accesskey="2" title="">Menu</a></li>
+            <li class="first"><a href="#" accesskey="3" title="">Gallery</a></li>
+			<li><a href="aboutus.html" accesskey="4" title="">About Us</a></li>
+			<li><a href="contact.html" accesskey="5" title="">Contact</a></li>
+		</ul>
+        <p>The finest in breakfast treats and coffees since 1971</p>
+	</div>
+	<div id="page">
+		<div id="content">
+			<div class="post">
+			  <h2 class="title"><a href="#">Doughnut Delights menu</a></h2>
+
+
+    	<div id="sliderFrame">
+        	<div id="slider">
+            	<img src="sliders/dn1.jpg" />
+            	<img src="sliders/dn2.jpg" />
+            	<img src="sliders/dn3.jpg" />
+            	<img src="sliders/dn4.jpg" />
+                <img src="sliders/dn5.jpg" />
+                <img src="sliders/dn6.jpg" />
+        	</div>
+        <!--Custom navigation buttons on both sides-->
+
+        <!--nav bar-->
+        <div style="text-align:center;padding:20px;z-index:20;">
+            <a onclick="imageSlider.previous()" class="group2-Prev"></a>
+            <a id='auto' onclick="switchAutoAdvance()"></a>
+            <a onclick="imageSlider.next()" class="group2-Next"></a>
+
+    </div>
+
+              </div>
+			  <p>&nbsp;</p>
+
+	  <div class="entry">
+	    
+	    </div>
+            
+					<table>
+					  <tbody>
+					    <tr>
+					      <td width="68%"><strong>Bakers Dozen Donuts:</strong> regular donuts: 
+					        <div class="hover_img"> 
+                          <a href="#">Choclate Frosted, <span><img src="donuts/chocfrosted.jpg" alt="Chocolate Frosted" height="100" /></span></a>  
+                          <a href="#">Vanilla Frosted, <span><img src="donuts/vanfrosted.jpg" alt="Vanilla Frosted" height="100" /></span></a> 
+                          <a href="#">Boston Cream, <span><img src="donuts/Bostoncreamdelightsm.jpg" alt="Boston Cream" height="100" /></span></a> 
+                          <a href="#">Jelly Filled, <span><img src="donuts/jelly.jpg" alt="Jelly Filled" height="100" /></span></a>  
+                          <a href="#">Cream Filled, <span><img src="donuts/cream.jpg" alt="Cream Filled" height="100" /></span></a>
+                          <a href="#">Glazed, <span><img src="donuts/glazed.jpg" alt="Glazed Donut" height="100" /></span></a>
+                          <a href="#">Chocolate Glazed, <span><img src="donuts/chocglazed.jpg" alt="Chocolate Glazed Donut" height="100" /></span></a> 
+                          <a href="#">Marble Twist, <span><img src="donuts/marbletwist.jpg" alt="marbletwist Donut" height="100" /></span></a>
+                          <a href="#">Sugar Raised, <span><img src="donuts/sugarraised.jpg" alt="Sugar Raised Donut" height="100" /></span></a>
+                          <a href="#">Plain Donut, <span><img src="donuts/plain.jpg" alt="Plain Donut" height="100" /></span></a>
+				          <a href="#">Plain Cruller, <span><img src="donuts/plaincruller.jpg" alt="Plain Cruller Donut" height="100" /></span></a>
+                          <a href="#">Honey Wheat, <span><img src="donuts/honeywheat.jpg" alt="Honey Wheat Donut" height="100" /></span></a>
+                          <a href="#">Jelly Puff, <span><img src="donuts/jelly.jpg" alt="Jelly Puff" height="100" /></span></a>  
+                          <a href="#">Cream Puff, <span><img src="donuts/cream.jpg" alt="Cream Puff" height="100" /></span></a>
+                          <a href="#">Coffee Roll, <span><img src="donuts/coffeeroll.jpg" alt="Coffee Roll" height="100" /></span></a>  
+                        
+                          </div>
+                          </td>
+					      <td id="righttext" width="32%">(13) @ $8.65</td>
+				        </tr>
+					    <tr>
+					      <td><strong>Regular Donut</strong> regular donuts: 
+												        <div class="hover_img"> 
+                          <a href="#">Choclate Frosted, <span><img src="donuts/chocfrosted.jpg" alt="Chocolate Frosted" height="100" /></span></a>  
+                          <a href="#">Vanilla Frosted, <span><img src="donuts/vanfrosted.jpg" alt="Vanilla Frosted" height="100" /></span></a> 
+                          <a href="#">Boston Cream, <span><img src="donuts/Bostoncreamdelightsm.jpg" alt="Boston Cream" height="100" /></span></a> 
+                          <a href="#">Jelly Filled, <span><img src="donuts/jelly.jpg" alt="Jelly Filled" height="100" /></span></a>  
+                          <a href="#">Cream Filled, <span><img src="donuts/cream.jpg" alt="Cream Filled" height="100" /></span></a>
+                          <a href="#">Glazed, <span><img src="donuts/glazed.jpg" alt="Glazed Donut" height="100" /></span></a>
+                          <a href="#">Chocolate Glazed, <span><img src="donuts/chocglazed.jpg" alt="Chocolate Glazed Donut" height="100" /></span></a> 
+                          <a href="#">Marble Twist, <span><img src="donuts/marbletwist.jpg" alt="Chocolate Glazed Donut" height="100" /></span></a>
+                          <a href="#">Sugar Raised, <span><img src="donuts/sugarraised.jpg" alt="Sugar Raised Donut" height="100" /></span></a>
+                          <a href="#">Plain Donut, <span><img src="donuts/plain.jpg" alt="Plain Donut" height="100" /></span></a>
+				          <a href="#">Plain Cruller, <span><img src="donuts/plaincruller.jpg" alt="Plain Cruller Donut" height="100" /></span></a>
+                          <a href="#">Honey Wheat, <span><img src="donuts/honeywheat.jpg" alt="Honey Wheat Donut" height="100" /></span></a>
+                          <a href="#">Jelly Puff, <span><img src="donuts/jelly.jpg" alt="Jelly Puff" height="100" /></span></a>  
+                          <a href="#">Cream Puff, <span><img src="donuts/cream.jpg" alt="Cream Puff" height="100" /></span></a>
+                          <a href="#">Coffee Roll, <span><img src="donuts/coffeeroll.jpg" alt="Coffee Roll" height="100" /></span></a>  
+                        
+                          </div>
+                          </td>
+					      <td id="righttext2">$1.05ea</td>
+				        </tr>
+					    <tr>
+					      <td><strong>Fancy Donut</strong> fancy donuts: 
+                          					        <div class="hover_img"> 
+                          <a href="#">Bow Tie, <span><img src="donuts/bowtie.jpg" alt="Bow Tie" height="100" /></span></a>  
+                          <a href="#">&#xC9;clair, <span><img src="donuts/enclair.jpg" alt="&#xC9;clair" height="100" /></span></a> 
+                          <a href="#">Apple Turnover, <span><img src="donuts/appleturnover.jpg" alt="Apple Turn Over" height="100" /></span></a> 
+                          <a href="#">Fancy Coffee Roll, <span><img src="donuts/fancycoffeeroll.jpg" alt="Fancy Coffee Roll" height="100" /></span></a>  
+         
+                          </div>
+                          </td>
+					      <td id="righttext3">2.00ea</td>
+				        </tr>
+					    <tr>
+                        <td>
+                        <div class="hover_img"> 					      
+                          <a href="#">French Culler, <span><img src="donuts/frenchculler.jpg" alt="French Culler" height="100" /></span></a>
+                          </div>
+                          </td>
+                          
+					      <td id="righttext4">2.00ea</td>
+				        </tr>
+                        </tbody>
+		        </table>
+					<p class="clearfix">&nbsp;</p>
+			  </div>
+
+			<div class="post">
+				<h2 class="title">&nbsp;</h2>
+			  <div class="entry">
+		<p class="clearfix">&nbsp;</p>
+
+		<table width="100%" border="0" cellspacing="6" cellpadding="0">
+		  <caption>&nbsp;
+		  </caption>
+		  <tbody>
+		    <tr>
+		      <td><p><img src="donuts/chocfrosted.jpg" width="100" height="88" alt="Chocolate Frosted"/><br />
+              Chocolate Frosted</p>
+               </td>
+		      <td><p><img src="donuts/vanfrosted.jpg" width="100" height="100" alt="Vanilla Frosted"/><br />
+              Vanilla Frosted</p>
+               </td>
+		      <td><p><img src="donuts/Bostoncreamdelightsm.jpg" width="100" height="79" alt="Boston Cream"/><br />
+              Boston Cream</p>
+              </td>
+		      <td><p><img src="donuts/jelly.jpg" width="100" height="75" alt="Jelly Filled"/><br />
+              Jelly Filled</p>
+              </td>
+		      </tr>
+		    <tr>
+		      <td><p><img src="donuts/cream.jpg" width="100" height="67" alt="Cream Filled"/><br />
+              Cream Filled</p>
+              </td>
+		      <td><p><img src="donuts/glazed.jpg" width="100" height="83" alt="Glazed"/><br />
+              Glazed</p>
+              </td>
+		      <td><p><img src="donuts/chocglazed.jpg" width="100" height="86" alt="Chocolate Glazed"/><br />
+              Chocolate Glazed</p>
+              </td>
+		      <td><p><img src="donuts/marbletwist.jpg" width="100" height="80" alt="Marble Twist"/><br />
+              Marble Twist</p>
+              </td>
+		      </tr>
+		    <tr>
+		      <td><p><img src="donuts/sugarraised.jpg" width="100" height="67" alt="Sugar Raised"/><br />
+              Sugar Raised</p>
+              </td>
+		      <td><p><img src="donuts/plain.jpg" width="100" height="100" alt="Plain Donut"/><br />
+              Plain Donut</p>
+              </td>
+		      <td><p><img src="donuts/plaincruller.jpg" width="100" height="78" alt="Plain Culler"/><br />
+              Plain Culler</p>
+              </td>
+		      <td><p><img src="donuts/honeywheat.jpg" width="100" height="100" alt="Honey Wheat"/><br />
+              Honey Wheat</p>
+              </td>
+		      </tr>
+		    <tr>
+		      <td><p><img src="donuts/jelly.jpg" width="100" height="75" alt="Jelley Puff"/><br />
+              Jelly Puff</p>
+              </td>
+		      <td><p><img src="donuts/cream.jpg" width="100" height="67" alt="Cream Puff"/><br />
+              Cream Puff</p>
+              </td>
+		      <td><p><img src="donuts/coffeeroll.jpg" width="100" height="66" alt="Coffee Roll"/><br />
+              Coffee Roll</p>
+              </td>
+		      <td><p><img src="donuts/bowtie.jpg" width="100" height="72" alt=""/><br />
+              Bow Tie</p>
+              </td>
+              </tr>
+              <tr>
+              <td><p><img src="donuts/enclair.jpg" width="100" height="78" alt=""/><br />
+              &#xC9;clair</p>
+              </td>
+              <td><p><img src="donuts/appleturnover.jpg" width="100" height="78" alt=""/><br />
+              Apple Turnover</p>
+              </td>
+              <td><p><img src="donuts/fancycoffeeroll.jpg" width="100" height="78" alt=""/><br />
+              Fancy Coffee Roll</p>
+              </td>
+              <td><p><img src="donuts/frenchculler.jpg" width="100" height="78" alt=""/><br />
+              French Culler</p>
+              </td>
+		      </tr>
+		    </tbody>
+		  </table>
+		<p>&nbsp; </p>
+			  </div>
+			</div>
+			<div class="post">
+				<h2 class="title">&nbsp;</h2>
+					<div class="entry">
+					<p>&nbsp;</p>
+					<p class="clearfix">&nbsp;</p>
+				</div>
+			</div>
+			<div style="clear: both;">&nbsp;</div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar">
+		  <ul>
+            <div id="topsellers">
+              <ul>
+                <li>
+                  <h2>Top selling products</h2>
+                  <ul>
+                    <li><a href="menu.html">Pistachio Pinwheels</a></li>
+                    <li><a href="menu.html">Boston Cream delights</a></li>
+                    <li><a href="menu.html">Chocolate confetti</a></li>
+                    <li><a href="menu.html">Marshmallow Mayhems</a></li>
+                    <li><a href="menu.html">French twists</a></li>
+                    <li><a href="menu.html">Bulls Horns</a></li>
+                    <li><a href="menu.html">Earl Grey - Hot</a></li>
+                    <li><img src="../images/vetsAdSmall.gif" width="100%" height="30%" alt=""/></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+				<li>
+				  <h2>About Doughnuts</h2>
+					<ul>
+					  <li></li>
+						<li><a href="http://www.thechildrenstrust.org.uk/page.asp?section=829&amp;">10 Facts about Doughnuts</a></li>
+						<li></li>
+						<li><a href="http://www.encyclopedia.com/topic/Doughnut.aspx">The Doughnut </a></li>
+						<li></li>
+						<li><a href="http://www.kidzworld.com/article/26983-all-about-donuts">All about doughnuts - Kidz World</a></li>
+					</ul>
+			  </li>
+				<li>
+					<h2>About Coffee</h2>
+					<ul>
+						<li><a href="http://www.ncausa.org/About-Coffee">National Coffee Association</a></li>
+						<li></li>
+						<li><a href="http://discovermagazine.com/2013/april/22-20-things-you-didnt-know-about-coffee">20 Thing you didn't know - about coffee</a></li>
+						<li></li>
+						<li><a href="http://www.newyorker.com/magazine/2011/11/21/sacred-grounds">Sacred Grounds</a></li>
+					</ul>
+				</li>
+			<li>
+					<h2>About tea</h2>
+				  <ul>
+						<li><a href="http://theteaspot.com/about-tea.html">The Tea Spot</a></li>
+						<li><a href="http://www.itoen.com/all-things-tea">Everything you need to know about Tea</a></li>
+						<li></li>
+						<li><a href="http://www.learn-about-tea.com/">Learn about Tea</a></li>
+						<li></li>
+						<li></li>
+			  </ul>
+			  </li>
+		    <li>
+		      <ul>
+		        <h2>Social Media</h2>
+		        <table width="98%" border="0" cellspacing="1" cellpadding="0">
+		          <tbody>
+		            <tr>
+		              <td><img src="../images/FB.png" width="133" height="50" alt=""/></td>
+		              <td><img src="../images/google+.png" width="111" height="51" alt=""/></td>
+	                </tr>
+		            <tr>
+		              <td><img src="../images/twitter.png" width="120" height="51" alt=""/></td>
+		              <td><img src="../images/rss.png" width="101" height="51" alt=""/></td>
+	                </tr>
+	              </tbody>
+	            </table>
+		        
+		        </ul>
+			  </li>
+			  <li> 		
+           <ul>
+           <h2>Sign up for the<br />
+            Coffee of the week
+           </h2>
+           <table width="100%" border="0" cellspacing="6" cellpadding="0">
+             <tbody>
+               <tr>
+                 <td width="44%"><label for="textfield">First Name:</label></td>
+                 <td width="56%"><input type="text" name="textfield" id="textfield" /></td>
+               </tr>
+               <tr>
+                 <td><label for="textfield2">Last name:</label></td>
+                 <td><input type="text" name="textfield2" id="textfield2" /></td>
+               </tr>
+               <tr>
+                 <td><label for="email">Email:</label></td>
+                 <td><input type="email" name="email" id="email" /></td>
+               </tr>
+               <tr>
+                 <td>&nbsp;</td>
+                 <td>&nbsp;</td>
+               </tr>
+               <tr>
+                 <td>&nbsp;</td>
+                            <td><input name="submit" type="submit" id="submit2" form="form1" formaction="mailto:webmaster@wolvenshire.com" formenctype="text/plain" formmethod="POST" tabindex="1" title="Send information" value="Submit" /></td>
+               </tr>
+             </tbody>
+           </table>
+           <p>&nbsp;</p>
+           <p>&nbsp;</p>
+           
+           </ul>
+            </li>
+            
+		  </ul>
+	  </div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+</div>
+<div id="footer">
+	<p>&copy; 2015 James Strink | Designed by <a href="http://templated.co"><strong>TEMPLATED</strong></a> / Modified by James Strink| <a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a> <a href="pages/credit.html">Credits</a></p>
+</div>
+</body>
+</html>
