@@ -94,6 +94,7 @@ p {
 }
 
 section {
+	background-color:#242625;
     padding: 100px 0;
 }
 
@@ -423,7 +424,13 @@ li{
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
         font-size: 22px;
     }
+/*-------------------------------------------*/	
+	section #section{
+		background-color: #000;
+	}
 }
+
+
 
 .call-to-action h2 {
     margin: 0 auto 20px;
