@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Donut Delights Menu</title>
+        
+        <!-- This is a link to the google HTML5 enabling script -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+        <meta name="description" content="">
+        <meta name="author" content="Richard Young">
+
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+        <!-- adds a favicon picture to the tab in the browser window read more here: But you need to have one in your folder to work -->
+        <link rel="shortcut icon" href="favicon.jpeg">
+
+        <link rel="stylesheet" type="text/css" href="dodel_style.css" media="screen" />
+        <link href="print.css" rel="stylesheet" type="text/css" media="print" />
+               
+  <!-- Embedded Style Sheet to override external CSS in certain areas of page -->
+        <style type="text/css">
+        
+        #l-col h3 {
+		letter-spacing: 2px; /* wanted to control separately */
+		font-size: 160%;
+		color: #000000;
+		text-align: center;
+		line-height: 2em;
+		padding: 18px 10px 10px 0px;
+		background: none;
+		}
+        
+		#kitchen {
+		padding-left: 15px;
+		padding-bottom: 5px;
+		}
+
+/* Style Sheet section to format the table of donut types */
+        	table, th, td {
+        		border: 1px solid black; /* MUST be 1 or 0, according to reading */
+        		}
+        
+        	th,td {
+    			padding: 7px;
+				}
+				
+			td {
+				text-align: center;
+				}
+				
+			th[scope="row"] 
+			{
+				text-align: left; 
+				font-weight: normal; 
+				}
+
+			table {
+ 				/* border-collapse: collapse; Just wanted to see what it did: Looks like an Excel Spreadsheet! */
+ 				border-width: 5px;
+ 				border-color: #783525; /* Use same color as body BG */
+ 				border-spacing: 5px; /* Replacing HTML "cellspacing": Must use px as unit for it to take effect. */
+ 				padding: 2px; /* Also part of replacing HTML "cellspacing": Must use px as unit for it to take effect. */
+    			width: 95%;
+    			margin-left: auto; /* Again: THAT'S what centers it! */
+				margin-right: auto; /* Again: THAT'S what centers it! */
+				}
+				
+	/* End Style Sheet section for table */
+			
+		#cont table {
+		color: #000000;
+		}
+
+		#bakery p { /* align the picture of the bakery */
+		text-align: center;
+		margin-top 20px;
+		margin-bottom 10px;
+		}
+
+		#footer {
+		margin-top: 0px; 
+		}
+
+        </style>
+        <!-- End of Embedded Style Sheet -->   
+
+    </head>
+
+    <body>
+
+<div id="wrap">
+
+<div id="header"> <!-- Finally DELETING the <h1></h1> TAGS SOLVED A PROBLEM -->
+<div id="logo">
+	<p>
+		<img src="images/donutDelightsLogoCrop200x139.png" alt="Logo of Donut Delights, serving home-made donuts and fresh-brewed coffee in Urbana, IL"/>
+	</p>
+</div> <!-- End logo div -->
+
+<div id="menu"> <!-- top navigation: HAD TO FLIP ORDER AROUND, due to way original template worked -->
+			<ul>
+				<li><a href="about_us.html">About Us&nbsp;</a></li>
+				<li><a href="contact.html">Contact&nbsp;</a></li>
+				<li><a href="donuts_menu.html">Our Menu&nbsp;</a></li>
+				<li><a href="home.html">Home&nbsp;</a></li>	
+			</ul>
+</div> <!-- End menu div -->
+
+</div> <!-- End header div -->
+<div class="clear"></div> <!-- ADDING ANOTHER ONE UP HERE is what allowed l-col heading to align correctly -->
+
+<div id="content"> <!-- REMOVE the align="right"> as obsolete -->
+
+<div id="l-col"> <!-- REMOVE the align="left"> as obsolete -->
+
+<h3>Current Favorites:</h3>
+<div class="favorites">
+<p>
+	Pistachio Pinwheels<br/>
+	Boston Cream Delights<br/>
+	Chocolate Confetti<br/>
+	Marshmallow Mayhems<br/>
+	French Twists<br/>
+	Bulls Horns
+</p>
+</div> <!-- End favorites div -->
+
+<h3>Coffee of the Week:</h3>
+	<p>
+		Ethiopian Yirgacheffe
+	</p> 
+	<p>
+		<img src="images/coffee-house-cropped_240x238.jpg" alt="Burlap bag of roasted coffee beans, with three scoops"/>
+	</p> 
+
+</div> <!-- End l-col div -->
+
+<div id="cont">
+	
+<div id="tagline">	
+<h3>The finest in breakfast treats and coffees since 1971</h3>
+</div>
+
+<!-- Paste-in a Table to represent the menu of Donut Delights -->
+		<table>
+			<caption>
+				Donut Prices, Singly and in Quantity
+			</caption>
+			<tr>
+				<th scope="col">Donut Types</th>
+				<th scope="col">Prices</th>
+			</tr>
+			<tr>
+				<th scope="row">Bakers Dozen Donuts: regular donuts, chocolate frosted, vanilla frosted, boston cream, jelly filled, cream filled, glazed, chocolate glazed, marble twist, sugar raised, plain donut, plain cruller, honey wheat, jelly puff, cream puff, coffee roll
+					</th>
+				<td>$8.65</td>
+			</tr>			
+			<tr>
+				<th scope="row">Regular Donut: chocolate frosted, vanilla frosted, boston cream, jelly filled, cream filled, glazed, chocolate glazed, marble twist, sugar raised, plain donut, plain cruller, honey wheat, jelly puff, cream puff, coffee roll
+					</th>
+				<td>$1.05</td>
+			</tr>			
+			<tr>
+				<th scope="row">Fancy Donut: bow tie, éclair, apple turnover, fancy coffee roll</th>
+				<td>$2.00</td>
+			</tr>
+			<tr>
+				<th scope="row">French Cruller</th>
+				<td>$2.00</td>
+			</tr>		
+		</table>
+
+
+<h3>We're open early, for that Baker's Dozen which  will make you the most popular person in the office!</h3>
+
+<div id="kitchen">
+<p>
+A state of the art kitchen and highly trained and dedicated bakery staff are here to keep serving up the best in hand-prepared donuts for your enjoyment.
+</p>
+</div><!-- End of kitchen div: FORGOT this one at first! -->
+<div id="bakery">
+<p>
+<img src="images/bakery_375x280.jpg" alt="Photo of the bakery area at Donut Delights, with highly-trained bakers at work"/>	
+</p>
+</div> <!-- End of bakery div -->
+
+
+</div> <!-- End cont div -->
+
+<div class="clear"></div> <!-- This needs to be there, even though I don't understand it! -->
+
+
+<div id="footer">
+<div id="footnav">
+<a href="home.html">Home</a> | <a href="donuts_menu.html">Our Menu</a> | <a href="contact.html">Contact</a> | <a href="about_us.html">About Us</a> |  &copy; 2014 Richard Young 
+</div> <!-- End footnav div -->
+<div class="payment">
+<a href="http://www.credit-card-logos.com"><img alt="" title="" src="http://www.credit-card-logos.com/images/multiple_credit-card-logos-1/credit_card_logos_visa_mc_amex_discover_paypal_sm.gif"></a> <!-- removed inline dimensions, put in CSS -->
+	
+</div> <!-- End payment div -->
+
+<!-- Original Footer Nav contained links to designer at Mitchenson: Leave commented for reference -->
+<!--<a href="#">homepage</a> | <a href="mailto:denise@mitchinson.net">contact</a> | <a href="http://validator.w3.org/check?uri=referer">html</a> | <a href="http://jigsaw.w3.org/css-validator">css</a> |  &copy; 2007 Anyone | -->
+<!-- (end of original footer nav) -->
+
+<!-- Leave original attribution here as a comment, but not showing on the page -->
+<!-- Design by <a href="http://www.mitchinson.net"> www.mitchinson.net</a><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0  License</a> -->
+<!-- (end of attribution) -->
+
+</div> <!-- End footer div: ***THIS HAD BEEN WRAPPED-UP INTO PREVIOUS LINE!!-->
+
+</div> <!-- End CONTENT div (the above "hidden" div had me messed up) -->
+</div> <!-- End wrap div -->
+</body>
+</html>

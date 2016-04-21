@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>The Story of Donut Delights</title>
+        
+        <!-- This is a link to the google HTML5 enabling script -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+        <meta name="description" content="">
+        <meta name="author" content="Richard Young">
+
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+        <!-- adds a favicon picture to the tab in the browser window read more here: But you need to have one in your folder to work -->
+        <link rel="shortcut icon" href="favicon.jpeg">
+
+        <link rel="stylesheet" type="text/css" href="dodel_style.css" media="screen" />
+        <link href="print.css" rel="stylesheet" type="text/css" media="print" />
+               
+  <!-- Embedded Style Sheet to override external CSS in certain areas of page -->
+        <style type="text/css">
+        
+        #tagline h3 { 
+		letter-spacing: 2px;
+		font-size: 101%; /* on this page, needing to modify body text messed with the tagline */
+		font-style: italic;
+		text-align: center;
+		text-shadow: 1px 1px #333333;
+		padding-top: 0px; /* needed to align the tagline w/other 3 pages */
+		padding-bottom: 15px;
+		}
+        
+        #l-col {
+        margin-right: 0px;
+        }
+        
+        #l-col h3 {
+		letter-spacing: 2px; /* wanted to control separately */
+		font-size: 200%;
+		color: #000000;
+		text-align: center;
+		line-height: 2em;
+		padding: 13px 10px 0px 0px;
+		background: none;
+		}
+
+		#l-col p img { /* used for modifying JUST the picture */
+		margin-top: 10px;
+		margin-bottom: 10px; /* to override the #l-col p setting above... */
+		}
+		
+					/* MAIN CONTENT: Try to modify formatting for this page */ 
+		#cont { 
+		font-size: 180%; /* Bumped-up beyond what Body text is set to */
+		width: 790px;
+		margin-left: 0px;  /* keeps the cont div bumped-up against the l-col div. MARGIN IS TRANSPARENT, which is why BG 			showed thru*/
+		padding-top: 10px;
+		padding-left: 10px;
+		margin-top: 20;
+		border-left: 0px solid #FDF6E8; /* Seemed to work on Project 7...NO EFFECT HERE */
+ 		/* removed border commands which were OVERRIDING my attempts to place cont where I wanted it!! */
+		text-align: left; /* try aligning right ... only aligned the text */
+		background: #FDF6E8; /* original #FDF6E8, turned to transparent to see where l-col actually went */
+		color: #999;
+		}
+		
+		#cont #p1 {
+		padding-left: 277px; /* LONG TIME before I realized: Have to overcome presence of l-col first! 277, not 25. */
+		padding-right: 10px;
+		padding-top: 5px;
+		}
+		
+		
+		#p2, #p3 {
+		padding-top: 1.0em;
+		padding-right: 10px;
+		}
+		
+		#donutcase {
+		margin: 15px auto;
+		text-align: center;
+		border-bottom: 25px #FDF6E8 solid;
+		border-top: 10px #FDF6E8 solid;
+		}
+		
+		#footer {
+		margin-top: -14px; /* Had to add to eliminate another "body background showing through" instance!! */
+		}
+        </style>
+        <!-- End of Embedded Style Sheet -->   
+
+    </head>
+
+    <body>
+
+<div id="wrap">
+
+<div id="header"> <!-- Finally DELETING the <h1></h1> TAGS SOLVED A PROBLEM -->
+<div id="logo">
+	<p>
+		<img src="images/donutDelightsLogoCrop200x139.png" alt="Logo of Donut Delights, serving home-made donuts and fresh-brewed coffee in Urbana, IL"/>
+	</p>
+</div> <!-- End logo div -->
+
+<div id="menu"> <!-- top navigation: HAD TO FLIP ORDER AROUND, due to way original template worked -->
+			<ul>
+				<li><a href="about_us.html">About Us&nbsp;</a></li>
+				<li><a href="contact.html">Contact&nbsp;</a></li>
+				<li><a href="donuts_menu.html">Our Menu&nbsp;</a></li>
+				<li><a href="home.html">Home&nbsp;</a></li>	
+			</ul>
+</div> <!-- End menu div -->
+
+</div> <!-- End header div -->
+<div class="clear"></div> <!-- ADDING ANOTHER ONE UP HERE is what allowed l-col heading to align correctly -->
+
+<div id="content"> <!-- REMOVE the align="right"> as obsolete -->
+
+<div id="l-col"> <!-- REMOVE the align="left"> as obsolete -->
+
+<h3>Our History</h3>
+<div class="oldshop">
+<p>
+	<img src="images/donutDelightsStoreFront1971_240x178.jpg" alt="The Donut Delights storefront, as it appeared in 1971"/>
+	The shop, in 1971
+</p>
+</div> <!-- End oldshop div -->
+
+</div> <!-- End l-col div -->
+
+<div id="cont">
+	
+<div id="tagline">	
+<h3>The finest in breakfast treats and coffees since 1971</h3>
+</div>
+<div id="p1">	
+<p> 
+Doughnut Delights was started in 1971 by Melvin Furballski, an immigrant baker from the far east coast of Poland. Known far and wide for his delicate pastries, Melvin fled his homeland in search of a better life for his family. In 1970 he landed in New York City and by chance he found an open seat on a bus heading west. When an unexpected mechanical failure forced a three day delay in Champaign, Illinois, Furballski saw the need for a doughnut shop, so he decided to stay and make a new life for himself in Urbana, IL.
+</p>
+</div> <!-- End p1 div -->
+
+
+<div id="p2">
+<p> 
+With only one hundred dollars to his name, he found an abandoned breadshop and within two days he had one of a kind doughnuts flying off the racks faster than he could bake them and things have never slowed down. Now you can find that same great doughnut recipe plus dozens more still being made with the same love and care as when Doughnut Delights first opened.
+</p>
+</div> <!-- End p2 div -->
+
+<div id="p3">
+<p> 
+A bakery fire in the mid-1980s destroyed many of the shop's records...but NOT THE RECIPES. While many people might have viewed the fire as an excuse to quit, Melvin instead used it as an opportunity to reconfigure the interior design, allowing him to add the coffee roastery section as well. So when you visit, be prepared for the inviting mix of aromas from fresh-roasted coffee beans and fresh-baked donuts: It's the closest thing to "Breakfast Heaven" anywhere in the C-U area!
+</p>
+</div> <!-- End p3 div -->
+
+<div id="donutcase">
+<p>
+<img src="images/donutcase_700x150.jpg" alt="One of the display cases at Donut Delights, showing a wide variety of donuts for sale"/>	
+</p>
+
+</div> <!-- End of donutcase div -->
+
+</div> <!-- End cont div -->
+
+<div class="clear"></div> <!-- This needs to be there, even though I don't understand it! -->
+
+
+<div id="footer">
+<div id="footnav">
+<a href="home.html">Home</a> | <a href="donuts_menu.html">Our Menu</a> | <a href="contact.html">Contact</a> | <a href="about_us.html">About Us</a> |  &copy; 2014 Richard Young 
+</div> <!-- End footnav div -->
+<div class="payment">
+<a href="http://www.credit-card-logos.com"><img alt="" title="" src="http://www.credit-card-logos.com/images/multiple_credit-card-logos-1/credit_card_logos_visa_mc_amex_discover_paypal_sm.gif"></a> <!-- removed inline dimensions, put in CSS -->
+	
+</div> <!-- End payment div -->
+
+<!-- Original Footer Nav contained links to designer at Mitchenson: Leave commented for reference -->
+<!--<a href="#">homepage</a> | <a href="mailto:denise@mitchinson.net">contact</a> | <a href="http://validator.w3.org/check?uri=referer">html</a> | <a href="http://jigsaw.w3.org/css-validator">css</a> |  &copy; 2007 Anyone | -->
+<!-- (end of original footer nav) -->
+
+<!-- Leave original attribution here as a comment, but not showing on the page -->
+<!-- Design by <a href="http://www.mitchinson.net"> www.mitchinson.net</a><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0  License</a> -->
+<!-- (end of attribution) -->
+
+</div> <!-- End footer div: ***THIS HAD BEEN WRAPPED-UP INTO PREVIOUS LINE!!-->
+
+</div> <!-- End CONTENT div (the above "hidden" div had me messed up) -->
+</div> <!-- End wrap div -->
+</body>
+</html>

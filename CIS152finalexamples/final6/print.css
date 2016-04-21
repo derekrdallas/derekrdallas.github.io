@@ -1,0 +1,26 @@
+/* Richard Young */
+/* PRINT Style Sheet for Final Project, CIS 152, Fall 2014 Parkland College */
+
+
+#menu {
+display: none; /* Add to supress navigation menu display in print edition */
+}
+
+#sliderFrame 
+{
+display: none; /* Add to supress slider display in print edition */
+}
+
+
+#footer #footnav { /* added selector to position footer nav WRT credit card images */
+display: none; /* Add to supress navigation menu display in print edition */
+}
+
+
+body img {  /* supress all images */
+display: none;	
+}
+
+form {    /* supress forms */
+display: none;	
+}

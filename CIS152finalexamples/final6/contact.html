@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Find/Contact Donut Delights</title>
+        
+        <!-- This is a link to the google HTML5 enabling script -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+        <meta name="description" content="">
+        <meta name="author" content="Richard Young">
+
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+        <!-- adds a favicon picture to the tab in the browser window read more here: But you need to have one in your folder to work -->
+        <link rel="shortcut icon" href="favicon.jpeg">
+   
+   <!-- Instantiating a Goole Map for the address of Donut Delights -->     
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script>
+		function initialize() {
+  		var mapProp = {
+   		 center:new google.maps.LatLng(40.114486,-88.226499),
+    	zoom:15,
+    	mapTypeId:google.maps.MapTypeId.ROADMAP
+  		};
+  		var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+
+        <link rel="stylesheet" type="text/css" href="dodel_style.css" media="screen" />
+        <link href="print.css" rel="stylesheet" type="text/css" media="print" />
+               
+  <!-- Embedded Style Sheet to override external CSS in certain areas of page -->
+        <style type="text/css">
+        
+        #l-col h3 {
+		letter-spacing: 2px; /* wanted to control separately */
+		font-size: 160%;
+		color: #000000;
+		text-align: center;
+		line-height: 2em;
+		padding: 18px 10px 20px 0px;
+		background: none;
+		}
+        
+		#l-col p { /* used for modifying the Weekly Special */
+		font-size: 150%;
+		text-align: left;
+		line-height: 1.2em;
+		margin-top: 10px;
+		margin-bottom: 15px;
+		margin-left: 15px;
+		}
+
+		#googleMap {
+		margin: 10px auto;
+		}
+		
+/* PASTE-IN portion of style which pertains to the Contact Form */
+#form-area {
+margin-left: 0px;	
+}
+
+th {
+	text-align: left; 
+	width: 50%; 
+	}
+	
+table, input, textarea, fieldset {
+	padding: 5px;
+	border-color: #000000;
+	border-width: 1px;
+	border-style: solid;
+}
+
+/* GROUPED selector to eliminate "double-border" in some browsers */
+input[type="checkbox"]
+	{
+	border: none; 
+	}
+	
+table {
+	font-size: 80%;
+	font-weight: normal;
+	color: #000000;
+	border-spacing: 5px; /* Replacing HTML "cellspacing": Must use px as unit for it to take effect. */
+ 	padding: 10px; /* Also part of replacing HTML "cellspacing": Must use px as unit for it to take effect. */
+}
+
+        </style>
+        <!-- End of Embedded Style Sheet -->   
+
+    </head>
+
+    <body>
+
+<div id="wrap">
+
+<div id="header"> <!-- Finally DELETING the <h1></h1> TAGS SOLVED A PROBLEM -->
+<div id="logo">
+	<p>
+		<img src="images/donutDelightsLogoCrop200x139.png" alt="Logo of Donut Delights, serving home-made donuts and fresh-brewed coffee in Urbana, IL"/>
+	</p>
+</div> <!-- End logo div -->
+
+<div id="menu"> <!-- top navigation: HAD TO FLIP ORDER AROUND, due to way original template worked -->
+			<ul>
+				<li><a href="about_us.html">About Us&nbsp;</a></li>
+				<li><a href="contact.html">Contact&nbsp;</a></li>
+				<li><a href="donuts_menu.html">Our Menu&nbsp;</a></li>
+				<li><a href="home.html">Home&nbsp;</a></li>	
+			</ul>
+</div> <!-- End menu div -->
+
+</div> <!-- End header div -->
+<div class="clear"></div> <!-- ADDING ANOTHER ONE UP HERE is what allowed l-col heading to align correctly -->
+
+<div id="content"> <!-- REMOVE the align="right"> as obsolete -->
+
+<div id="l-col"> <!-- REMOVE the align="left"> as obsolete -->
+
+<h3>Contact Information:</h3>
+<div class="contact">
+<p>
+	Donut Delights<br/>
+	2112 East Main Street<br/>
+	Urbana, IL 61801<br/>
+	(217)-555-1234<br/>
+	<br/>
+	Email: doughnutdelights@gmail.com
+</p>
+</div> <!-- End contact div -->
+	
+	<p>
+		<br/> <!-- Just leaving some white-space between items for now -->
+		<br/> 
+		<br/>
+	<!-- From fourtencreative.com: Twitter and Facebook buttons --> 
+		<img src="images/follow-us-on-twitter-tiny.jpg" alt="Icon of Twitter, inviting you to follow Donut Delights"/>
+		<img src="images/like-us-on-facebook-tiny.jpg" alt="Icon of Facebook, inviting you to Like Donut Delights"/>
+	</p> 
+
+
+</div> <!-- End l-col div -->
+
+
+<div id="cont">
+	
+<div id="tagline">	
+<h3>The finest in breakfast treats and coffees since 1971</h3>
+</div> <!-- End tagline div -->
+	
+<!-- Paste-in a Google Map to show the location of Donut Delights -->
+<div id="googleMap" style="width:421px;height:320px;"></div> <!-- was 500 x 380 -->
+
+
+<h3>Please feel free to email us, or use the form below to sign-up for our regular coupon specials:</h3>
+
+<!-- PASTE-IN code for a simplified form, modified from Project 11 -->
+
+					<div id="form-area">
+						<form method="post" enctype="multipart/form-data" action="http://pub10.bravenet.com/emailfwd/senddata.php" accept-charset="utf-8">
+							<p>
+								<!-- <p> Required by instructions, for validation -->
+								<input type="hidden" name="usernum" value="848297917" />
+								<!-- " /" on input tags Required by instructions -->
+								<input type="hidden" name="cpv" value="2" />
+							</p>
+							<!-- DO NOT CHANGE OR REMOVE THE 3 TAGS ABOVE THIS COMMENT-->
+							<!-- Cell padding/spacing specified by instructions -->
+							<table>
+								<!-- REMOVED border="0" cellpadding="10" cellspacing="5" align="left": Replace w/CSS -->
+								<!-- REMOVED SECTION ALTOGETHER  -->
+								<!-- <tr>  -->
+								<!-- <td><h3 style="border-bottom:1px solid black;"><span id="pFormTitle"></span></h3></td> -->
+								<!-- Removed "Project 11" text -->
+								<!-- </tr>  -->
+								<tr>
+									<!-- TRY changing the "<td>" tag to "<th scope="row"> to make them HEADERS -->
+									<th scope="row"><label for="firstname" style="float:left;width:140px;">Email Address</label>
+									<p>
+										<input type="text" name="firstname" id="firstname" value="" maxlength="35" style="width:300px;" />
+									</p><!-- " /" on input tags Required by instructions -->
+									<div style="clear:left;height:20px;">
+										<!-- &nbsp; -->
+									</div><!-- Deleted 2 BR tags -->
+									<label for="address" style="float:left;width:140px;">Your Favorite Item(s) @ Donut Delights</label>
+									<textarea name="address" id="address" rows="6" cols="40"></textarea><!-- Deleted width and height in pixels, try adding in rows/cols to see if it validates  style="width:300px;height:60px;"  -->
+									<div style="clear:left;height:20px;">
+
+									</div><!-- Deleted 2 BR tags -->
+									<label style="float:left;width:140px;">How did you find out about Donut Delights?</label><!-- THIS KEPT BOX FROM EXPANDING TO RH BORDER!! <span name="howfound" style="display:block;width:400px;" /> -->
+									<fieldset>
+										<legend>
+											Information Source - (choose all that apply)
+										</legend>
+										<p>
+											<input type="checkbox" name="friends" id="friends" value="yes" style="vertical-align: middle;border:0px;background-color:transparent" />
+											<!-- " /" on input tags Required by instructions -->
+											<label for="friends">Friends</label>
+											<br />
+											<!-- Add BR to align selections -->
+											<input type="checkbox" name="newspaper" id="newspaper" value="yes" style="vertical-align: middle;border:0px;background-color:transparent" />
+											<!-- " /" on input tags Required by instructions -->
+											<label for="newspaper">Newspaper</label>
+											<br />
+											<!-- Add BR to align selections -->
+											<input type="checkbox" name="radio" id="radio" value="yes" style="vertical-align: middle;border:0px;background-color:transparent" />
+											<!-- " /" on input tags Required by instructions -->
+											<label for="radio">Radio</label>
+											<br />
+											<!-- Add BR to align selections -->
+											<input type="checkbox" name="website" id="website" value="yes" style="vertical-align: middle;border:0px;background-color:transparent" />
+											<!-- " /" on input tags Required by instructions -->
+											<label for="website">Website</label><!-- Deleted </span> -->
+										</p>
+									</fieldset>
+									<div style="clear:left;height:20px;">
+
+									</div><!-- Deleted 2 BR tags --><!-- HAD A "HANGING DIV" which caused 6 errors! </div> --></th>
+								<tr>
+									<!-- Removed align="left", as it's not supported in HTML5: Do w/CSS -->
+									<td><!-- YOU CAN MODIFY THE TEXT WITHIN VALUE="" TO MODIFY YOUR BUTTON TEXT-->
+									<input type="submit" value=" Submit " />
+									<!-- " /" on input tags Required by instructions -->
+									<input type="reset" value=" Reset " />
+									<!-- " /" on input tags Required by instructions -->
+									<input name="subject" type="hidden" id="subject" value="Restaurant Information for Richard Young" />
+									</td>
+								</tr>
+							</table>
+						</form>
+
+					</div><!--end #form-area-->
+</div> <!--end cont div-->
+<div class="clear"></div> <!-- This needs to be there, even though I don't understand it! -->
+
+
+<div id="footer">
+<div id="footnav">
+<a href="home.html">Home</a> | <a href="donuts_menu.html">Our Menu</a> | <a href="contact.html">Contact</a> | <a href="about_us.html">About Us</a> |  &copy; 2014 Richard Young 
+</div> <!-- End footnav div -->
+<div class="payment">
+<a href="http://www.credit-card-logos.com"><img alt="" title="" src="http://www.credit-card-logos.com/images/multiple_credit-card-logos-1/credit_card_logos_visa_mc_amex_discover_paypal_sm.gif"></a> <!-- removed inline dimensions, put in CSS -->
+	
+</div> <!-- End payment div -->
+
+<!-- Original Footer Nav contained links to designer at Mitchenson: Leave commented for reference -->
+<!--<a href="#">homepage</a> | <a href="mailto:denise@mitchinson.net">contact</a> | <a href="http://validator.w3.org/check?uri=referer">html</a> | <a href="http://jigsaw.w3.org/css-validator">css</a> |  &copy; 2007 Anyone | -->
+<!-- (end of original footer nav) -->
+
+<!-- Leave original attribution here as a comment, but not showing on the page -->
+<!-- Design by <a href="http://www.mitchinson.net"> www.mitchinson.net</a><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0  License</a> -->
+<!-- (end of attribution) -->
+
+</div> <!-- End footer div: ***THIS HAD BEEN WRAPPED-UP INTO PREVIOUS LINE!!-->
+
+</div> <!-- End CONTENT div (the above "hidden" div had me messed up) -->
+</div> <!-- End wrap div -->
+</body>
+</html>

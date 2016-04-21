@@ -1,0 +1,271 @@
+/* Richard Young */
+/* Style Sheet for Final Project, CIS 152, Fall 2014 Parkland College */
+
+/* Started with CSS from template "67-golden" from mitchinson */
+
+body {
+margin: 0px;
+padding: 0px;
+font: normal 62.5% Verdana, "Trebuchet MS", Arial, sans-serif; /* Orig. 62.5% */
+text-align:left;
+line-height: 2em;
+background:#F5B142;  /* original #E89E01: */
+color: #333333;
+}
+
+html {
+font-size: 100%;
+}
+
+#wrap {
+width: 800px; /* bumped-up from 700 */
+margin: 0 auto;
+text-align: left;
+border: 10px solid #3B87A1; /* was #fff  now using one of the Park Avenue Coffee colors*/
+}
+			/* HEADER */ 
+#header {
+height: 140px; /* had at 117 for quite a while */
+border: solid #fac79c;
+border-width: 0 0 5px 0; /* Took Bottom to 5px to cover-up the line: Made Nav buttons larger */
+background: url(images/Coffee+Cream+PaperTile3.jpg); 
+color: #333;
+}
+
+#header #logo { /* to position the Donut Delights logo where I wanted */
+float: left;
+}
+	
+			/*TOP NAVIGATION */ 
+#menu {
+height: 100px; /* original 100px: changed many times, but didn't seem to do much */
+margin : 0 auto;
+padding : 103px 0px 0px 0px; /* placed nav vertically with this */
+list-style-type : none;
+list-style-image : none;
+background: transparent; /* Put texture on other end of image, swap image    */
+} /* BG had been #fff url(logo2_rot180_swap.jpg) no-repeat; */
+
+#menu li {
+float : right; /* original float left: Have to reverse order in HTML*/
+width :14em; /* was 10 em */
+border-left : 1px solid #eee;
+}
+
+#menu a {
+display : block;
+height : 30px; /* original 70px: Sized to fit inside color strip in header */
+width : 14em; /* was 10 em */
+padding : 12px 0px 0px 0px; /* original 30px Top */
+font-weight : bold;
+line-height : 10px; /* original 30px */
+letter-spacing: 3px;
+text-align : right; /* was center */
+color : #000;
+background : #D3793A url(images/bitedonutNoBG_60x40.png) no-repeat; /* original #D85B00 */
+}
+
+#menu a:hover {
+color : #fff;
+background : #783525 url(images/bitedonutNoBG_60x40.png) no-repeat; /* Image was "menu.jpg", color #C53500*/
+}
+
+			/* CONTENT CONTAINER  */ 
+#content {
+position: relative; /* original "relative": tried removing...no change */
+width: 800px; /* bumped-up from 700 */
+padding: 0 0 0 0;
+border-top: 2px #fac79c;
+/* margin-top; 5px; Has no effect! Something must be overriding it */
+/*text-align: right; /* try adding to align content ... didn't do anything */
+background: #FDF6E8; 
+color: #333;
+}
+			/* LEFT CONTENT */ 
+#l-col {
+float: left; /* seemed to make sense, but conflicted w/something else to prevent left-alignment */
+margin-top: 0;
+margin-left: 5px; /* added to try aligning l-col ... didn't do anything */
+/* border-top: 5px #FFFFFF; ALSO being overriden? */
+width: 272px;
+text-align: left;
+background: #FFFFFF; /* original transparent, turning to #ffffff didn't change anything either */
+color: #333;
+}
+			/* MAIN CONTENT */ 
+#cont { 
+font-size: 140%; /* Bumped-up beyond what Body text is set to */
+width: 525px;
+margin-left: 272px;  /* keeps the cont div bumped-up against the l-col div. MARGIN IS TRANSPARENT, which is why BG showed thru*/
+/*float: right; /* Completely messed it up, content container all shrunk-up, when I MIS-PLACED the Container Close Tag */
+margin-top: 0;
+border-left: 0px solid #FFFFFF; /* Seemed to work on Project 7...NO EFFECT HERE */
+ /* removed border commands which were OVERRIDING my attempts to place cont where I wanted it!! */
+text-align: left; /* try aligning right ... only aligned the text */
+background: #FDF6E8; /* sometimes turned to transparent to see where l-col actually went */
+color: #999;
+}
+			/* FOOTER */ 
+#footer {
+/* height; 20px; did NOTHING at all */
+margin-top: 10px;
+text-align: center;
+padding: 7px; /* adding padding to make footer less "thin": DIDN'T DO ANYTHING */
+border: 2px solid #E35509; /* ONLY way I could find to "fatten-up" the footer... */
+background: #E35509; /* Was orginally #D85B00: Make #E35509 to match one of Park Avenue Coffee colors */
+color: #fff;
+}
+
+#footer a {
+color: #F4D500;
+}
+
+#footer a:hover {
+color: #fff;
+}
+
+#footer #footnav { /* added selector to position footer nav WRT credit card images */
+float: left;
+padding-left: 30px;
+padding-top: 8px;
+}
+
+#footer #payment { /* added selector to try an manipulate the credit card images */
+/* float: right; NOT NEEDED once the "footnav" div was added and floated LEFT */ 
+width: 254px;  /* removed from inline position, put here instead */
+height: 30px;  /* removed from inline position, put here instead */
+border: 0px;	/* removed from inline position, put here instead */
+}
+			/* LINKS*/ 
+a:link, a:visited {
+color: #E89E01;
+text-decoration: none;
+}
+a:hover {
+text-decoration: none;
+color: #032D57;
+}
+
+/* STILL NEEDED THIS PART to make my desired nav work */
+ul { 
+list-style : none;
+margin : 0;
+padding : 0px;
+} 
+			/* TYPOGRAPHY */ 
+.clear {
+clear: left;
+overflow: hidden;
+width: 0;
+height: 0;
+}
+
+p {
+color: #585947;
+margin:0;
+padding: 0px 10px; /* started at 0px, 10px */
+}
+
+h3 {
+margin: 0 0 0 10px;
+padding: 10px 0px;
+letter-spacing: 3px;
+font-size: 1.2em;
+background: inherit;
+color: #C63A00;
+}
+
+/* Add special formatting for the tagline, to make it stand out from rest of text on page */
+#tagline h3 { 
+letter-spacing: 2px;
+font-size: 1.3em;
+font-style: italic;
+text-align: center;
+text-shadow: 1px 1px #333333;
+}
+
+#l-col h3 {
+letter-spacing: 2px; /* wanted to control separately */
+font-size: 140%;
+color: #000000;
+text-align: center;
+line-height: 2em;
+padding: 18px 10px 20px 0px;
+background: url(images/Dollars_to_Donuts30pct_240x118.png) no-repeat;
+}
+
+#l-col p { /* used for modifying the Weekly Special */
+font-size: 180%;
+text-align: center;
+line-height: 1.2em;
+margin-top: 10px;
+margin-bottom: 15px;
+}
+
+#l-col p img { /* used for modifying JUST the picture */
+margin-top: 10px;
+margin-bottom: -10px; /* to override the #l-col p setting above... */
+}
+
+#about p {
+margin: 20px 10px;
+font-size: 120%;
+}
+
+#coffee p {  /* starting out identical to "#about", but possibly alter later */
+margin: 20px 10px;
+font-size: 120%;
+}
+				/* SEARCH BOX DELETED, per instructions */
+				
+/* CSS for an image gallery for Donut Delights */
+/* Original gallery from: */
+/* http://www.menucool.com */
+/* MANY sections cut-out as unnecessary */
+#sliderFrame, #sliderFrame div {
+    box-sizing: content-box;
+}
+#sliderFrame 
+{
+    position:relative;
+    width:374px;
+    margin: 10px auto; /*center-aligned*/
+}
+
+#slider, #slider div.sliderInner {
+    width:374px;height:250px;/* Must be the same size as the slider images */
+}
+
+#slider {
+	background:#fff url(loading.gif) no-repeat 50% 50%;
+	position:relative;
+	margin:0 auto; /*center-aligned*/
+    transform: translate3d(0,0,0);
+    box-shadow: 0px 1px 5px #999999;
+}
+
+/* each bullet */
+/* NEEDED TO KEEP this part, as it caused numbers to appear on images... */
+ #slider div.navBulletsWrapper div 
+{
+    width:11px; height:11px;
+    font-size:0;color:White;/*hide the index number in the bullet element*/
+    background:transparent url(bullet.png) no-repeat 0 0;
+    display:inline-block; *display:inline; zoom:1;
+    overflow:hidden;cursor:pointer;
+    margin:0 6px;/* set distance between each bullet*/
+}
+
+#slider div.navBulletsWrapper div.active {background-position:0 -11px;}
+
+/* --------- Others ------- */
+
+#slider div.sliderInner {
+	overflow:hidden; 
+	-webkit-transform: rotate(0.000001deg);/* fixed the Chrome not crop border-radius bug*/
+	position:absolute; top:0; left:0;
+}
+/* END of Gallery CSS */
+
+
+
