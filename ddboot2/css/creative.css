@@ -25,7 +25,7 @@ hr.light {
 }
 
 a {
-    color: #fff;
+    color: #000;
 	font-family: 'Raleway', sans-serif;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
@@ -81,7 +81,7 @@ p {
 }
 
 .bg-primary {
-    background-color: #c9532d;
+    background-color: #333;
 }
 
 .bg-dark {
