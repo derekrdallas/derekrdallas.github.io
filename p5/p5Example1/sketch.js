@@ -1,6 +1,7 @@
 function setup() {
 	createCanvas(900, 900);
 	background('#ccff99');
+	frameRate(90);
 }
 
 function draw() {
