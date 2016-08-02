@@ -4,23 +4,41 @@
 /*
 The issue with this is that after being touched the screen remains blue.. need to have a boolean test for touch if touching change the screen if not then blank it.
 */
-
-
+var objXloc;
+var moveRight;
+var moveLeft;
 function setup() {
 	createCanvas(500, 500);
-	var hotPink = color(255,138,172);
-	var blueLake = color(139,186,230);
-	var c = color(255, 204, 0); 
+	moveRight = 1;
+	moveLeft= -1;
+	objXloc= width/2; // location of ObjectX
+	//var hotPink = color(255,138,172);
+	//var blueLake = color(139,186,230);
+	//var c = color(255, 204, 0);
+	// draw object at start
+	noStroke();
+	fill(150);
+	ellipse(width/2, height - height*.25, 25, 50);
+	
+	 
 }
 
 function draw() {
 	background(255);	
 	
+	
+	
+	
 	if(touchIsDown && touchX > width/2 && touchY > height-height*.25){
 		noStroke();
 		fill('#3399ff')//blue
-		rect(width/2,0,width/2,height);	
-	}
+		rect(width/2,0,width/2,height);
+		
+		// draw object in motion
+	fill(150);
+	ellipse(objXloc, height - height*.25, 25, 50);
+	objXloc= objXloc + moveRight;	
+	}else
 	
 	
 	if(touchIsDown && touchX<width/2 && touchY > height-height*.25){
@@ -28,7 +46,18 @@ function draw() {
 	noStroke();
 	fill('#ff3399');//pink
 	rect(0,0,width/2, height);
+	
+	// draw object in motion
+	fill(150);
+	ellipse(objXloc, height-height*.25, 25, 50);
+	objXloc= objXloc + moveLeft;	
+	}else{
+		noStroke();
+		fill(150);
+		ellipse(objXloc, height - height*.25, 25, 50);	
 	}
+	
+	// add condition to stop movement outside of frames
 	
  
 }
