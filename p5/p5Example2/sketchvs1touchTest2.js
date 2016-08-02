@@ -58,6 +58,9 @@ function draw() {
 	}
 	
 	// add condition to stop movement outside of frames
+	if(objXloc > width || objXloc < 0){
+		objXloc = objXloc + 0;
+	}
 	
  
 }
