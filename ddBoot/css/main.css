@@ -35,10 +35,10 @@ h2 {
 	/*margin-left:20%;
 	margin-right:20%;*/
 	padding:10px;
-	/*width:60%;*/
+	width:60%;
 	}
 	
-	#banner{
+#banner{
 	background-image:url(../images/header.png);
 	background-size:auto;
 	background-position: center;
@@ -49,11 +49,19 @@ h2 {
 	height:200px;
 	position: relative;
 	width:auto;
-	
-	
 }
+
+#courses{
+	width:60%;
+%}
 	
-	
+#courses  a{
+	color:#65c8c6;
+}
+
+#courses a:hover{
+	color: #C8C265;
+}
 	
 #header {
 	
@@ -63,6 +71,7 @@ h2 {
 	
 	
 }
+
 hgroup{
 	width:parent;
 	
@@ -138,7 +147,7 @@ hgroup{
 
  #nav ul {
 	float: left;
-	width: 100%;
+	width: 450px;
 	padding-left: 0;
 	
 	/*margin-top: 10px;*/
@@ -272,5 +281,10 @@ figure {
 	font-weight: 300;
 	letter-spacing:0.01em;
 	/*text-shadow: 1px 1px #222;*/
+	}
+	
+	
+	#portfolioButton{
+		width:100px;
 	}
 

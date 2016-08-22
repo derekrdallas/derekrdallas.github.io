@@ -1,0 +1,117 @@
+@charset "utf-8";
+/*
+h1 {color: #65c8c6; blue 
+font-family: 'Luckiest Guy', cursive;
+
+h2 {
+	color: #C8C265; yellow
+	font-family: 'Raleway', sans-serif;
+	
+#nav .current {
+	color: #BF2E1A; red	
+	
+
+
+*/
+
+body{
+	/*background-image:url(images/webBkgrnd1.png);*/
+	background-color:#fff;
+}
+#contactContent {
+	text-align:center;
+}
+
+#courses{
+	/*background: linear-gradient(#fff, #c3cef0);*/
+	background-color:#fc0;
+	 }
+
+#courses p{
+text-align:left;	
+}
+contactContent i{
+	font-size:6em;
+	margin-bottom:10px;	
+}
+
+#galleryContent{
+	/*background: linear-gradient(#fff, #c3cef0);*/
+}
+
+#threeD{
+	background-color:#fc0;
+}
+.yellow{
+	background-color:#fc0;
+}
+
+.glyphs{
+	font-size:6em;
+	margin-bottom:10px;
+}
+
+
+
+h2{
+	color:#fff;
+	font-family: 'Raleway', sans-serif;
+	font-size:1.0em;
+	margin-top:-12px;
+}
+
+h3{
+	color:#000;
+	font-family: 'Luckiest Guy', cursive;
+	font-size:2.0em;
+}
+
+
+h4{
+	color:#222;
+	font-family: 'Raleway', sans-serif;
+	font-size:1.5em;	
+}
+
+
+h5{
+	color:#555;
+	font-family: 'Raleway', sans-serif;
+	font-size:1.0em;
+	margin-top:-5px;
+}
+
+.jumbotron{
+	 background-image: url("images/bucketHouseProjection_fogNight.png");
+	background-size:auto;
+	background-position: center;
+   	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	height:200px;
+	position: relative;
+	width:auto; 
+}
+
+.jumbotron h1{
+	color:#fc0;
+	font-family: 'Luckiest Guy', cursive;
+	font-size:2.0em;	
+}
+
+.liteBlue{
+	 background-color: #3955aa; /* lite purple;*/
+}
+.drkBluePurple{
+	background-color: :#130921;
+}
+
+
+.red{
+	backgound-color:#BF2E1A;
+}
+
+.marginBottom{
+	margin-bottom:5px;
+}
