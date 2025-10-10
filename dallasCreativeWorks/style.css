@@ -1,0 +1,33 @@
+
+/* website colors
+lite green: #b1cd72
+Dark GReen #1d3011
+Light blue #73b9f3
+Dark blue #244b7b
+Red #ba434f
+Yellow #fae040
+
+
+
+
+   */
+
+
+
+body {
+  background-color: #b1cd72;
+}
+
+h1 {
+  background-color: #b1cd72;
+  color: #244b7b;
+  margin-left: 20px;
+}
+
+h3 {
+  background-color: #b1cd72;
+  color: #244b7b;
+  font-family: "Fleur De Leah", cursive;
+  font-size: 20px;
+  /*margin-left: 20px;*/
+}
