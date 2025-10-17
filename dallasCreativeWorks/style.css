@@ -5,12 +5,7 @@ Dark GReen #1d3011
 Light blue #73b9f3
 Dark blue #244b7b
 Red #ba434f
-Yellow #fae040
-
-
-
-
-   */
+Yellow #fae040 */
 
 
 
@@ -58,11 +53,44 @@ h1 {
 
   img {
       border-radius: 10px; /* Rounds all corners with a 10px radius */
-	   box-shadow: 5px 5px 5px #244b7b;
+	  box-shadow: 5px 5px 5px #244b7b;
     }
+.img_plain{
+	
+}
+
+.divStroke{
+border-radius: 10px; /* Rounds all corners with a 10px radius */
+background-color: #244b7b;
+	
+}
+
+.whiteText{
+background-color: #244b7b;
+	color: white;
+font-family: 'FleurDeLeah', cursive;
+font-weight: 400;
+ font-style: normal;
+}
+
+
+.quicksand-whiteText {
+	
+	/* <weight>: Use a value from 300 to 700
+ <uniquifier>: Use a unique and descriptive class name */
+  background-color: #244b7b;
+color:white;
+	font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+	font-size:1.5em;
+  font-style: normal;
+	padding:16px;
+}
+
 
 .prod_div_shadow{
-	background-color:white;	
-  box-shadow: 5px 5px 10px #244b7b;
-	margin-right:10px;
+background-color:white;	
+box-shadow: 5px 5px 10px #244b7b;
+margin-right:10px;
 }
