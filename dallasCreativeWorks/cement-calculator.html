@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dallas Creative Works Calculator</title>
+	
+	<style>
+      @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+		/*.fleur-de-leah-regular {
+  font-family: "Fleur De Leah", cursive;
+  font-weight: 400;
+  font-style: normal;
+}  */
+		
+		
+		
+    </style>
+	
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: #f3f4f6;
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 24px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            font-family: "Fleur De Leah", cursive;
+  			font-weight: 400;
+            font-style: normal;
+			font-size: 32px;
+            /*font-weight: bold;*/
+            margin-bottom: 4px;
+        }
+        
+        .header p {
+            font-size: 14px;
+            color: #bfdbfe;
+        }
+        
+        .tabs {
+            display: flex;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .tab {
+            flex: 1;
+            padding: 16px;
+            border: none;
+            background: white;
+            color: #4b5563;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+        }
+        
+        .tab.active {
+            background: #2563eb;
+            color: white;
+            border-bottom-color: #1d4ed8;
+        }
+        
+        .content {
+            padding: 16px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            margin-bottom: 16px;
+            overflow: hidden;
+        }
+        
+        .card-header {
+            padding: 16px;
+            background: #f9fafb;
+            border-bottom: 1px solid #e5e7eb;
+            font-weight: bold;
+            color: #1f2937;
+        }
+        
+        .card-body {
+            padding: 16px;
+        }
+        
+        .mold-item {
+            padding: 16px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .mold-item:last-child {
+            border-bottom: none;
+        }
+        
+        .mold-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .checkbox {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+            cursor: pointer;
+        }
+        
+        .mold-info {
+            flex: 1;
+        }
+        
+        .mold-name {
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 4px;
+        }
+        
+        .mold-oz {
+            font-size: 14px;
+            color: #6b7280;
+        }
+        
+        .quantity-input {
+            margin-left: 32px;
+            margin-top: 8px;
+        }
+        
+        .quantity-input label {
+            display: block;
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 4px;
+        }
+        
+        .quantity-input input {
+            width: 100px;
+            padding: 8px 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        
+        .total-display {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .total-display h2 {
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+        
+        .total-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .total-label {
+            font-size: 18px;
+        }
+        
+        .total-value {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        
+        .total-value-small {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .btn {
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .btn-primary {
+            background: #2563eb;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #1d4ed8;
+        }
+        
+        .btn-success {
+            background: #16a34a;
+            color: white;
+        }
+        
+        .btn-success:hover {
+            background: #15803d;
+        }
+        
+        .btn-danger {
+            background: #dc2626;
+            color: white;
+            padding: 8px 12px;
+            width: auto;
+        }
+        
+        .btn-edit {
+            background: #2563eb;
+            color: white;
+            padding: 8px 12px;
+            width: auto;
+        }
+        
+        .btn-secondary {
+            background: #6b7280;
+            color: white;
+        }
+        
+        .form-group {
+            margin-bottom: 16px;
+        }
+        
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 4px;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        
+        .btn-group {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .btn-group .btn {
+            flex: 1;
+        }
+        
+        .mold-actions {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .mold-list-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .mold-list-item:last-child {
+            border-bottom: none;
+        }
+        
+        .history-item {
+            padding: 16px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .history-item:last-child {
+            border-bottom: none;
+        }
+        
+        .history-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 12px;
+        }
+        
+        .history-date {
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 4px;
+        }
+        
+        .history-total {
+            font-size: 14px;
+            color: #2563eb;
+            font-weight: 600;
+        }
+        
+        .history-molds {
+            background: #f9fafb;
+            padding: 12px;
+            border-radius: 6px;
+        }
+        
+        .history-molds-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 8px;
+        }
+        
+        .history-mold-item {
+            font-size: 14px;
+            color: #6b7280;
+            margin-left: 8px;
+            margin-bottom: 4px;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 48px 24px;
+            color: #6b7280;
+        }
+        
+        .hidden {
+            display: none !important;
+        }
+        
+        .notification {
+            position: fixed;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #16a34a;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Dallas Creative Works</h1>
+        <p>Cement Calculator</p>
+    </div>
+    
+    <div class="tabs">
+        <button class="tab active" onclick="switchTab('calculate')">Calculate</button>
+        <button class="tab" onclick="switchTab('history')">History</button>
+        <button class="tab" onclick="switchTab('manage')">Molds</button>
+    </div>
+    
+    <div class="content">
+        <!-- Calculate Tab -->
+        <div id="calculate-tab" class="tab-content">
+            <div id="calculate-content"></div>
+        </div>
+        
+        <!-- History Tab -->
+        <div id="history-tab" class="tab-content hidden">
+            <div id="history-content"></div>
+        </div>
+        
+        <!-- Manage Tab -->
+        <div id="manage-tab" class="tab-content hidden">
+            <button class="btn btn-success" onclick="showAddMoldForm()">+ Add New Mold</button>
+            
+            <div id="mold-form" class="card hidden" style="margin-top: 16px;">
+                <div class="card-body">
+                    <h3 id="form-title" style="margin-bottom: 16px; font-size: 18px;">Add New Mold</h3>
+                    <div class="form-group">
+                        <label>Mold Name</label>
+                        <input type="text" id="mold-name" placeholder="e.g., Large Planter">
+                    </div>
+                    <div class="form-group">
+                        <label>Cement Volume (ounces)</label>
+                        <input type="number" step="0.1" id="mold-ounces" placeholder="e.g., 16">
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-primary" onclick="saveMold()">Save</button>
+                        <button class="btn btn-secondary" onclick="cancelMoldForm()">Cancel</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card" style="margin-top: 16px;">
+                <div class="card-header">Your Molds (<span id="mold-count">0</span>)</div>
+                <div id="mold-list"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Data storage
+        let molds = [];
+        let selectedMolds = {};
+        let pourHistory = [];
+        let editingMoldId = null;
+        let currentTab = 'calculate';
+        
+        // Load data from localStorage
+        function loadData() {
+            const savedMolds = localStorage.getItem('cement-molds');
+            const savedHistory = localStorage.getItem('pour-history');
+            
+            if (savedMolds) {
+                molds = JSON.parse(savedMolds);
+            }
+            
+            if (savedHistory) {
+                pourHistory = JSON.parse(savedHistory);
+            }
+            
+            renderCurrentTab();
+        }
+        
+        // Save data to localStorage
+        function saveMolds() {
+            localStorage.setItem('cement-molds', JSON.stringify(molds));
+        }
+        
+        function saveHistory() {
+            localStorage.setItem('pour-history', JSON.stringify(pourHistory));
+        }
+        
+        // Switch tabs
+        function switchTab(tab) {
+            currentTab = tab;
+            
+            // Update tab buttons
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.add('hidden'));
+            
+            // Show selected tab
+            document.getElementById(tab + '-tab').classList.remove('hidden');
+            
+            renderCurrentTab();
+        }
+        
+        // Render current tab
+        function renderCurrentTab() {
+            if (currentTab === 'calculate') {
+                renderCalculateTab();
+            } else if (currentTab === 'history') {
+                renderHistoryTab();
+            } else if (currentTab === 'manage') {
+                renderManageTab();
+            }
+        }
+        
+        // Calculate Tab
+        function renderCalculateTab() {
+            const container = document.getElementById('calculate-content');
+            
+            if (molds.length === 0) {
+                container.innerHTML = `
+                    <div class="card">
+                        <div class="empty-state">
+                            <p style="margin-bottom: 16px;">No molds yet. Add some in the "Molds" tab!</p>
+                            <button class="btn btn-primary" onclick="switchTab('manage'); event.target.closest('.tabs').querySelector('.tab:last-child').click();">Add Molds</button>
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+            
+            let html = '<div class="card"><div class="card-header">Select Molds</div>';
+            
+            molds.forEach(mold => {
+                const isSelected = selectedMolds[mold.id];
+                const quantity = isSelected || 1;
+                
+                html += `
+                    <div class="mold-item">
+                        <div class="mold-header">
+                            <input type="checkbox" class="checkbox" ${isSelected ? 'checked' : ''} 
+                                   onchange="toggleMold('${mold.id}')">
+                            <div class="mold-info">
+                                <div class="mold-name">${mold.name}</div>
+                                <div class="mold-oz">${mold.ounces} oz per mold</div>
+                            </div>
+                        </div>
+                        ${isSelected ? `
+                            <div class="quantity-input">
+                                <label>Quantity:</label>
+                                <input type="number" min="1" value="${quantity}" 
+                                       onchange="updateQuantity('${mold.id}', this.value)">
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+            });
+            
+            html += '</div>';
+            
+            // Calculate total
+            const totalOunces = calculateTotal();
+            const totalGallons = (totalOunces / 128).toFixed(2);
+            const remainingOunces = (totalOunces % 128).toFixed(1);
+            
+            html += `
+                <div class="total-display">
+                    <h2>Total Cement Needed</h2>
+                    <div class="total-row">
+                        <span class="total-label">Gallons:</span>
+                        <span class="total-value">${totalGallons}</span>
+                    </div>
+                    <div class="total-row">
+                        <span class="total-label">Total Ounces:</span>
+                        <span class="total-value-small">${totalOunces.toFixed(1)}</span>
+                    </div>
+                </div>
+            `;
+            
+            if (totalOunces > 0) {
+                html += `
+                    <button class="btn btn-success" style="margin-top: 16px;" onclick="savePourRecord()">
+                        Save Pour to History
+                    </button>
+                `;
+            }
+            
+            container.innerHTML = html;
+        }
+        
+        function toggleMold(id) {
+            if (selectedMolds[id]) {
+                delete selectedMolds[id];
+            } else {
+                selectedMolds[id] = 1;
+            }
+            renderCalculateTab();
+        }
+        
+        function updateQuantity(id, value) {
+            const qty = parseInt(value);
+            if (qty > 0) {
+                selectedMolds[id] = qty;
+            } else {
+                delete selectedMolds[id];
+            }
+            renderCalculateTab();
+        }
+        
+        function calculateTotal() {
+            let total = 0;
+            for (const [moldId, quantity] of Object.entries(selectedMolds)) {
+                const mold = molds.find(m => m.id === moldId);
+                if (mold) {
+                    total += mold.ounces * quantity;
+                }
+            }
+            return total;
+        }
+        
+        function savePourRecord() {
+            const totalOunces = calculateTotal();
+            if (totalOunces === 0 || Object.keys(selectedMolds).length === 0) {
+                return;
+            }
+            
+            const moldsList = [];
+            for (const [moldId, quantity] of Object.entries(selectedMolds)) {
+                const mold = molds.find(m => m.id === moldId);
+                moldsList.push({
+                    name: mold.name,
+                    quantity: quantity,
+                    ounces: mold.ounces
+                });
+            }
+            
+            const record = {
+                id: Date.now().toString(),
+                date: new Date().toISOString(),
+                totalOunces: totalOunces,
+                totalGallons: (totalOunces / 128).toFixed(2),
+                molds: moldsList
+            };
+            
+            pourHistory.unshift(record);
+            saveHistory();
+            
+            selectedMolds = {};
+            
+            showNotification('Pour saved to history!');
+            renderCalculateTab();
+        }
+        
+        // History Tab
+        function renderHistoryTab() {
+            const container = document.getElementById('history-content');
+            
+            if (pourHistory.length === 0) {
+                container.innerHTML = `
+                    <div class="card">
+                        <div class="empty-state">
+                            No pour records yet. Complete a calculation and save it!
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+            
+            let html = '<div class="card"><div class="card-header">Pour History</div>';
+            
+            pourHistory.forEach(record => {
+                const date = new Date(record.date).toLocaleDateString('en-US', {
+                    month: 'short',
+                    day: 'numeric',
+                    year: 'numeric',
+                    hour: 'numeric',
+                    minute: '2-digit'
+                });
+                
+                html += `
+                    <div class="history-item">
+                        <div class="history-header">
+                            <div>
+                                <div class="history-date">${date}</div>
+                                <div class="history-total">${record.totalGallons} gallons (${record.totalOunces.toFixed(1)} oz)</div>
+                            </div>
+                            <button class="btn btn-danger" onclick="deleteHistoryRecord('${record.id}')">Delete</button>
+                        </div>
+                        <div class="history-molds">
+                            <div class="history-molds-title">Molds Used:</div>
+                            ${record.molds.map(m => `
+                                <div class="history-mold-item">• ${m.name} × ${m.quantity} (${(m.ounces * m.quantity).toFixed(1)} oz)</div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            });
+            
+            html += '</div>';
+            container.innerHTML = html;
+        }
+        
+        function deleteHistoryRecord(id) {
+            if (confirm('Delete this pour record?')) {
+                pourHistory = pourHistory.filter(r => r.id !== id);
+                saveHistory();
+                renderHistoryTab();
+            }
+        }
+        
+        // Manage Tab
+        function renderManageTab() {
+            const list = document.getElementById('mold-list');
+            document.getElementById('mold-count').textContent = molds.length;
+            
+            if (molds.length === 0) {
+                list.innerHTML = '<div class="empty-state">No molds yet. Click "Add New Mold" to get started!</div>';
+                return;
+            }
+            
+            let html = '';
+            molds.forEach(mold => {
+                html += `
+                    <div class="mold-list-item">
+                        <div class="mold-info">
+                            <div class="mold-name">${mold.name}</div>
+                            <div class="mold-oz">${mold.ounces} oz</div>
+                        </div>
+                        <div class="mold-actions">
+                            <button class="btn btn-edit" onclick="editMold('${mold.id}')">Edit</button>
+                            <button class="btn btn-danger" onclick="deleteMold('${mold.id}')">Delete</button>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            list.innerHTML = html;
+        }
+        
+        function showAddMoldForm() {
+            editingMoldId = null;
+            document.getElementById('form-title').textContent = 'Add New Mold';
+            document.getElementById('mold-name').value = '';
+            document.getElementById('mold-ounces').value = '';
+            document.getElementById('mold-form').classList.remove('hidden');
+        }
+        
+        function editMold(id) {
+            editingMoldId = id;
+            const mold = molds.find(m => m.id === id);
+            document.getElementById('form-title').textContent = 'Edit Mold';
+            document.getElementById('mold-name').value = mold.name;
+            document.getElementById('mold-ounces').value = mold.ounces;
+            document.getElementById('mold-form').classList.remove('hidden');
+        }
+        
+        function saveMold() {
+            const name = document.getElementById('mold-name').value.trim();
+            const ounces = parseFloat(document.getElementById('mold-ounces').value);
+            
+            if (!name || !ounces) {
+                alert('Please fill in all fields');
+                return;
+            }
+            
+            if (editingMoldId) {
+                const mold = molds.find(m => m.id === editingMoldId);
+                mold.name = name;
+                mold.ounces = ounces;
+            } else {
+                molds.push({
+                    id: Date.now().toString(),
+                    name: name,
+                    ounces: ounces
+                });
+            }
+            
+            saveMolds();
+            cancelMoldForm();
+            renderManageTab();
+        }
+        
+        function cancelMoldForm() {
+            document.getElementById('mold-form').classList.add('hidden');
+            editingMoldId = null;
+        }
+        
+        function deleteMold(id) {
+            if (confirm('Delete this mold?')) {
+                molds = molds.filter(m => m.id !== id);
+                saveMolds();
+                delete selectedMolds[id];
+                renderManageTab();
+            }
+        }
+        
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.className = 'notification';
+            notification.textContent = message;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 2000);
+        }
+        
+        // Initialize
+        loadData();
+    </script>
+</body>
+</html>
