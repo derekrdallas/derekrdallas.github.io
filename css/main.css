@@ -1,58 +1,93 @@
-body {
-	background-color: #000;
-	font-size: 100%; /* sets font size to 16px */
+body{
+	 background-image: url("atomicBkgrnd.jpg");
+	
 }
 
-#container {
-	clear:both;
-	background-color: #000;
-	margin-left: auto;
-	margin-right: auto;
-	width:auto;
-}
 
-#banner {
-	background-color: #BF2E1A;
-	border-radius: 25px;
-	box-shadow: 2px 2px 2px #000;
-	height: 150px;
-	width: 100%;
-}
-
-/**fonts style----------------------------------*/
-
-h1 {
+h1{
 	color: #65c8c6;
 	font-family: 'Jura', sans-serif;
-	font-size: 1.95em;
+	font-size: 2.0em;
 	font-weight: 600;
-	margin-left: 5%;
+	letter-spacing:0.07em;
 }
 
 h2 {
 	color: #C8C265;
 	font-family: 'Jura', sans-serif;
-	font-size: 1.0em;
+	font-size: 1.2em;
 	font-weight: 300;
 	margin-bottom: 5px;
-	margin-top: -28px;
-	margin-left: 5%;
-	letter-spacing:0.03em;
+	margin-top: -16px;
+	margin-left: 0%;
+	letter-spacing:0.01em;
 }
 
-header {
-	
-	background-color: transparent;
-	float:left;
-	height: auto;
-	margin-left: 0;
-	margin-right: 0;
-	vertical-align: bottom;
+
+#containerDiv{
+	background-color:transparent;
+	height:auto;
+	margin-top:50px;
+	margin-left:20%;
+	margin-right:20%;
 	width:100%;
+	padding:10px;
+	
+	
+	
+}
+#header {
+	background-color:#222;
+	padding-left:40px;
+	width:parent;
 	
 }
 hgroup{
-	width:100%;
+	width:parent;
+}
+
+#contentLeft{
+	background-color:#333;
+	color:#fff;
+	padding-left:40px;
+	
+}
+
+#quickLinks{
+	background-color:#555;
+	color:#fff;
+	font-family: 'Jura', sans-serif;
+	font-size: 1.2em;
+	font-weight: 300;
+	padding-left:40px;
+}
+
+#quickLinks p{
+	font-family: 'Jura', sans-serif;
+	font-size: 1.0em;
+	font-weight: 300;
+	margin-left:0px;	
+}
+#quickLinks a{
+	background-color:#555;
+	color: #fff;
+	font-family: 'Jura', sans-serif;
+	font-size: 0.75em;
+	font-weight: 300;
+	letter-spacing:0.1em;
+}
+
+#quickLinks a:hover{
+	color: #C8C265;
+	font-family: 'Jura', sans-serif;
+	font-size: 0.75em;
+	font-weight: 300;
+	letter-spacing:0.1em;
+}
+
+
+.alt{
+background-color:#777;	
 }
 
  nav {
@@ -165,7 +200,7 @@ section p{
 }
 
 #courseWebpageLinks {
-	clear:both;
+	background-color:#222;
 	color: #C8C265;
 	font-size: 0.9em;
 	font-family: 'Jura', sans-serif;
@@ -242,16 +277,11 @@ section a:hover {
 }
 
 #footer {
-	background-color: transparent;
-	clear:inherit;
-	color: #F1F1F2;
-	float: left;
+	background-color: #888;
+	color: #333;
 	font-family: 'Jura', sans-serif;
 	font-weight: 300;
-	margin-left: 5%;
-	margin-right: 5%;
-	width: auto;
-	height: auto;
+	
 }
 
 table {
@@ -308,4 +338,3 @@ section th{
  font-size: 1.0em;
  font-weight: 600;
 	
-
