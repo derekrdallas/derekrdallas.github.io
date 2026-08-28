@@ -1,0 +1,215 @@
+@charset "utf-8";
+/* CSS Document DM Recruiting site*/
+
+/*Base styling*/
+
+*{
+	box-sizing:border-box; /*The box-sizing property allows us to include the padding and border in an element's total width and height.  */
+}
+
+body{
+	background-color:#000;
+	margin:0;
+	font-family:Arial,Helvetica,sans-serif;/*The font-family property specifies the font for an element.
+
+The font-family property can hold several font names as a "fallback" system. If the browser does not support the first font, it tries the next font.*/
+}
+
+h2{
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-weight: 100;
+	color:yellow;
+	
+}
+
+header, footer{
+	background-color:#222;
+	color:white;
+	height:70px;
+	padding:0px;
+}
+main{
+	background-color:#000;
+	max-width: 100%;
+	margin:0 20px 0 20px; /*auto - the browser calculates the margin*/
+	padding:20px
+}
+
+.navbar{
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.links {
+	color:white;
+	display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+
+
+section{
+	border-radius: 0px;
+	margin-bottom:00px;
+	padding:10px;
+}
+
+
+/* classes*/
+.red{
+	background-color:#ef4023;
+	background-color:#ef4023;
+	margin:0;
+}
+.blue{
+	background-color:#58caf2;
+	margin:0;
+}
+
+.green{
+	color:#4eb748;
+}
+
+#hero img{
+	  /* Set a specific height */
+  height: auto;
+  width: 100%;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: relative;
+  margin: 0;
+}
+
+.hero-img{	
+	border-radius: 30px 30px 0 0;
+}
+
+/* glarrery styles */
+
+.gallery-flex-box{
+	display: flex;
+	flex: auto;
+	flex-flow: wrap;
+	flex-direction: row;
+	gap:20px;
+	justify-content: center;
+}
+
+.card{
+	margin-top:-20px;
+	flex: 1 1 auto;
+}
+
+.gal-cards-container {
+  background-color: antiquewhite;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+  transition: 0.3s;
+  width:auto;
+  border-radius: 10px;
+  padding:5px;
+  margin-bottom:10px;
+}
+.gal-img{
+	border-radius: 10px 10px 0 0;
+	
+}
+
+.student-name{
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-size: 1.0rem;
+	
+}
+.project-name{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 0.7rem;
+	margin-top:-18px;
+}
+
+.course-name{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 0.7rem;
+	margin-top:-10px;
+}
+
+.iframe-style{
+	aspect-ratio:16 / 9;
+	border:0;
+	border-radius: 20px;
+	height: auto;
+	width: 100%;
+	max-width: 800px;
+	
+}
+
+.animation-gallery-box{
+	display: flex;
+	flex: 1 1 800px;
+	flex-flow: wrap;
+	flex-direction: row;
+	gap:20px;
+	justify-content: center;
+	width:80%;
+}
+
+.iframe-container{
+  background-color: antiquewhite;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+  flex: 1 1 200px; 
+  transition: 0.3s;
+  border-radius: 10px;
+  padding:5px;
+  margin-bottom:10px;
+}
+
+.sketchfab-embed-wrapper{
+	margin-bottom: 30px;
+	width:100%;
+	max-width: inherit;
+}
+
+.sketchfab-embed-wrapper p{
+	
+	width:100%;
+	max-width: inherit;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
