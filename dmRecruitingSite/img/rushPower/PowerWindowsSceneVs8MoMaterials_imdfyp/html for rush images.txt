@@ -1,0 +1,26 @@
+
+
+<img
+sizes="(max-width: 1380px) 100vw, 1380px"
+srcset="
+PowerWindowsSceneVs8MoMaterials_imdfyp_c_scale,w_180.png 180w,
+PowerWindowsSceneVs8MoMaterials_imdfyp_c_scale,w_695.png 695w,
+PowerWindowsSceneVs8MoMaterials_imdfyp_c_scale,w_1015.png 1015w,
+PowerWindowsSceneVs8MoMaterials_imdfyp_c_scale,w_1240.png 1240w,
+PowerWindowsSceneVs8MoMaterials_imdfyp_c_scale,w_1380.png 1380w"
+src="PowerWindowsSceneVs8MoMaterials_imdfyp_c_scale,w_1380.png"
+alt="">
+
+
+<picture>
+<img
+sizes="(max-width: 1380px) 100vw, 1380px"
+srcset="
+PowerWindowsSceneVs8MoMaterials_imdfyp_c_scale,w_180.png 180w,
+PowerWindowsSceneVs8MoMaterials_imdfyp_c_scale,w_695.png 695w,
+PowerWindowsSceneVs8MoMaterials_imdfyp_c_scale,w_1015.png 1015w,
+PowerWindowsSceneVs8MoMaterials_imdfyp_c_scale,w_1240.png 1240w,
+PowerWindowsSceneVs8MoMaterials_imdfyp_c_scale,w_1380.png 1380w"
+src="PowerWindowsSceneVs8MoMaterials_imdfyp_c_scale,w_1380.png"
+alt="">
+</picture>

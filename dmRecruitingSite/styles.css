@@ -1,0 +1,324 @@
+@charset "utf-8";
+/* CSS Document DM Recruiting site*/
+
+/*Base styling*/
+
+
+
+/* WEB FONT
+
+.oswald-<uniquifier> {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+end web font info */
+
+
+
+
+*{
+	box-sizing:border-box; /*The box-sizing property allows us to include the padding and border in an element's total width and height.  */
+}
+
+body{
+	background-color:#000;
+	margin:0;
+	font-family:Arial,Helvetica,sans-serif;/*The font-family property specifies the font for an element.
+The font-family property can hold several font names as a "fallback" system. If the browser does not support the first font, it tries the next font.*/
+	padding:20px;
+}
+
+
+
+header{
+	background-color:#000;
+	color:white;
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+	height:140px;
+	padding:0px;
+}
+main{
+	background-color:#000;
+	max-width: 100%;
+	/*margin:0 20px 0 20px; /*auto - the browser calculates the margin*/
+	/*padding:20px*/
+}
+
+.icon-box{
+	background-image: url("img/dm-logo-navIcon.png");
+	background-color: black;
+	background-repeat: no-repeat;
+	order: 1;
+	width:140px;
+	height: 140px;
+}
+.navbar{
+  
+  order:2;
+  padding: 1rem 2rem;
+}
+
+.links {
+	color:white;
+	display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+section{
+	border-radius: 0px;
+	margin-bottom: 0px;
+	/* padding:10px; */
+}
+
+footer{
+	background-color:#000;
+	color:white;
+	height:140px;
+	padding:0px;
+}
+
+
+/* classes*/
+.red{
+	background-color:#ef4023;
+	margin:0;
+	padding:10px;
+	width: 100%;
+}
+.blue{
+	background-color:#58caf2;
+	margin:0;
+	padding:10px;
+	width: 100%;
+}
+
+.green{
+	color:#4eb748;
+}
+
+.grey-dark{
+	background-color:#000;
+	margin:0;
+	padding:10px;
+	width: 100%;
+}
+
+#hero{
+	width:100%;
+	height: 50%;
+	padding:0;
+}
+
+#hero img{
+	  /* Set a specific height */
+  height: 50%;
+  width: auto;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  padding:0;
+  position: relative;
+  margin: 0;
+}
+
+.hero-img{	
+	border-radius: 0px 0px 0 0;
+}
+
+/* glarrery styles */
+
+.gallery-flex-box{
+	display: flex;
+	flex: auto;
+	flex-flow: wrap;
+	flex-direction: row;
+	gap:20px;
+	justify-content: center;
+}
+
+.card{
+	margin-top:-20px;
+	flex: 1 1 auto;
+}
+
+.gal-cards-container {
+  background-color: antiquewhite;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+  transition: 0.3s;
+  width:auto;
+  border-radius: 10px;
+  padding:5px;
+  margin-bottom:10px;
+}
+.gal-img{
+	border-radius: 10px 10px 0 0;	
+}
+
+
+
+.iframe-style{
+	aspect-ratio:16 / 9;
+	border:0;
+	border-radius: 20px;
+	height: auto;
+	width: 100%;
+	max-width: 800px;	
+}
+
+.animation-gallery-box{
+	display: flex;
+	flex: 1 1 800px;
+	flex-flow: wrap;
+	flex-direction: row;
+	gap:20px;
+	justify-content: center;
+	width:80%;
+}
+
+.iframe-container{
+  background-color: antiquewhite;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+  flex: 1 1 200px; 
+  transition: 0.3s;
+  border-radius: 10px;
+  padding:5px;
+  margin-bottom:10px;
+}
+
+.sketchfab-embed-wrapper{
+	margin-bottom: 30px;
+	width:100%;
+	max-width: inherit;
+}
+
+.sketchfab-embed-wrapper p{	
+	width:100%;
+	max-width: inherit;
+} 
+
+
+/* text and font styling */
+
+.student-name{
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-size: 1.0rem;
+	
+}
+.project-name{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 0.7rem;
+	margin-top:-18px;
+}
+
+.course-name{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 0.7rem;
+	margin-top:-10px;
+}
+
+h2{
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-weight: 100;
+	color:yellow;
+	
+}
+.subTitle{
+	margin-top:-15px;
+}
+
+
+.oswald-h1 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /* 200- 700 */
+  font-style: normal;
+  font-size: 2.5rem;
+}
+
+
+
+.oswald-h2 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500; /* 200- 700 */
+  font-style: normal;
+  font-size: 2.0rem;
+}
+
+.oswald-subtitle {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin-top:-35px;
+  font-size: 1.5rem;
+}
+
+/* digital media h1 font styling as <span> */
+.oswald-h1-red {
+  color:#ef4023;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /* 200- 700 */
+  font-style: normal;
+  font-size: 2.5rem;
+  margin-bottom:-50px;
+}
+
+.oswald-h1-blue {
+  color:#58caf2;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300; /* 200- 700 */
+  font-style: normal;
+  font-size: 2.5rem;
+	margin-left: -5px;
+}
+.oswald-h1-subtitle {
+  color:white;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin-top:-35px;
+  font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<!--https://www.w3schools.com/howto/howto_js_topnav_responsive.asp   -->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!-- FIXED: Added hyphens to device-width and initial-scale -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Digital Media Recruiting site</title>
+		<link rel="stylesheet" href="styles.css">
+		
+		<!-- WEBFONTS ADDED -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">		
+		
+		<script src="scripts.js" defer></script>
+	</head>
+	<body>
+
+		<header>
+			<div class="icon-box"></div>
+			
+			<nav class="navbar">
+				<ul class="links">
+					<li> <a href="#welcome" >About Us</a> </li>
+					<li><a href="#gallery">Galleries</a></li>
+					<li>Courses</li>
+					<li>Future</li>				
+					<li>Bookings</li>			
+				</ul>			
+			</nav>		
+		</header>
+		
+		<section id="hero">
+			<!--use picture tag with media query for small screens  -->
+			<picture>
+			  <source srcset="img/herobig.webp" media="(width >= 600px)" />
+			  <img class="hero-img" src="img/herosmall.webp" alt="heroImage" />
+			</picture>		
+		</section>
+	
+		<main>			
+			<section class="grey-dark">
+				<h1><span class="oswald-h1-red">DIGITAL</span><span class="oswald-h1-blue">MEDIA</span></h1>
+			<p class="oswald-h1-subtitle">dream, draw, design, develop</p>
+			</section>
+			
+			<section id="gallery" class="red">
+				<h2 class="oswald-h2">Image Gallery</h2>
+				<p class="oswald-subtitle">In this section I will have a brief description of the skills and a simple gallery </p>
+				
+				<div class="gallery-flex-box">
+					<div class="gal-cards-container">
+						<img class="gal-img" src="img/rush_small.png" width="180px" alt="a room with a window and televisions" >
+						<div class="card">							
+							<p class="student-name">Student 1</p>
+							<p class="project-name">Tonal Structure</p>
+							<p class="course-name">CSC 187</p>
+						</div>
+
+					</div><!-- end gal-cards-container -->
+				
+					<div class="gal-cards-container">
+						<img class="gal-img" src="img/rush_small.png" width="180px" alt="a room with a window and televisions" >
+						<div class="card">							
+							<p class="student-name">Student 2</p>
+							<p class="project-name">Tonal Structure</p>
+							<p class="course-name">CSC 187</p>
+						</div>
+
+					</div><!-- end gal-cards-container -->
+					
+						<div class="gal-cards-container">
+						<img class="gal-img" src="img/rush_small.png" width="180px" alt="a room with a window and televisions" >
+						<div class="card">							
+							<p class="student-name">Student 3</p>
+							<p class="project-name">Tonal Structure</p>
+							<p class="course-name">CSC 187</p>
+						</div>
+
+					</div><!-- end gal-cards-container -->
+					
+						<div class="gal-cards-container">
+						<img class="gal-img" src="img/rush_small.png" width="180px" alt="a room with a window and televisions" >
+						<div class="card">							
+							<p class="student-name">Student 4</p>
+							<p class="project-name">Tonal Structure</p>
+							<p class="course-name">CSC 187</p>
+						</div>
+
+					</div><!-- end gal-cards-container -->
+					
+						<div class="gal-cards-container">
+						<img class="gal-img" src="img/rush_small.png" width="180px" alt="a room with a window and televisions" >
+						<div class="card">							
+							<p class="student-name">Student 5</p>
+							<p class="project-name">Tonal Structure</p>
+							<p class="course-name">CSC 187</p>
+						</div>
+
+					</div><!-- end gal-cards-container -->
+					
+						<div class="gal-cards-container">
+						<img class="gal-img" src="img/rush_small.png" width="180px" alt="a room with a window and televisions" >
+						<div class="card">							
+							<p class="student-name">Student 6</p>
+							<p class="project-name">Tonal Structure</p>
+							<p class="course-name">CSC 187</p>
+						</div>
+							</div><!-- end gal-cards-container -->
+								<div class="gal-cards-container">
+						<img class="gal-img" src="img/rush_small.png" width="180px" alt="a room with a window and televisions" >
+						<div class="card">							
+							<p class="student-name">Student 7</p>
+							<p class="project-name">Tonal Structure</p>
+							<p class="course-name">CSC 187</p>
+						</div>
+
+					</div><!-- end gal-cards-container -->
+							
+					<div class="gal-cards-container">
+						<img class="gal-img" src="img/rush_small.png" width="180px" alt="a room with a window and televisions" >
+						<div class="card">							
+							<p class="student-name">Student 8</p>
+							<p class="project-name">Tonal Structure</p>
+							<p class="course-name">CSC 187</p>
+						</div>
+
+					</div><!-- end gal-cards-container -->
+
+					
+				</div><!-- ends gallery flex box -->
+			</section>
+			
+			<section class="blue"> <!-- animation video sectio start -->
+				<h2>Animation Gallery</h2>
+				<p id="test" class="subTitle" >Get Animated!</p>
+				
+				<div class="animation-gallery-box"><!-- animation -gallery-box start -->
+					<div class="iframe-container">
+						<iframe class="iframe-style" width="1337" height="752" src="https://www.youtube.com/embed/qoO4KwgwQv0" title="Parkland College Digital Media 2D Animation student Gallery" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						
+						<div class="iframe-info-box">
+							<p class="student-name">2D Animation</p>
+							<p class="project-name">Student work</p>
+							<p class="course-name">CSC 186</p>
+						
+						</div> <!-- iframe-info-box-->
+					</div><!-- iframe-container end -->
+					
+					
+					<div class="iframe-container">
+						<iframe class="iframe-style" width="1337" height="752" src="https://www.youtube.com/embed/qoO4KwgwQv0" title="Parkland College Digital Media 2D Animation student Gallery" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						
+						<div class="iframe-info-box">
+							<p class="student-name">3D Animation</p>
+							<p class="project-name">Student work</p>
+							<p class="course-name">CSC 188</p>
+						
+						</div> <!-- iframe-info-box-->
+					</div><!-- iframe-container end -->
+					
+					
+					
+				
+			</div><!-- animation -gallery-box end -->
+			</section> <!-- animation video sectio end -->
+			
+			
+			<section id="model-gallery" class="red">
+				<h2>Model Gallery</h2>
+				<p class="subTitle">Here we will display 3d models</p>
+				
+				<div class="gallery-flex-box">
+					<div class="gal-cards-container">
+					
+					<!-- add in the sketchFab info start-->
+						<div class="sketchfab-embed-wrapper"> 
+							<iframe title="Hurricane Beard and Mustache comb" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/849e2504c63049799f79a78e085a65c6/embed"> </iframe> 
+							<p style="font-size: 13px; font-weight: normal; margin: 5px; margin-bottom:10px; color: #4A4A4A;"> 
+								<a href="https://sketchfab.com/3d-models/hurricane-beard-and-mustache-comb-849e2504c63049799f79a78e085a65c6" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Hurricane Beard and Mustache comb </a><br> 
+								by <a href="https://sketchfab.com/ddallas" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Derek Dallas </a> on <a href="https://sketchfab.com" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>				
+						
+					<!-- add in the sketchFab info end -->	
+					
+					  <div class="card">							
+					    <p class="student-name">CSC 187</p>
+							<p class="project-name">3D Animation 1</p>
+							<p class="course-name">Realism Project</p>
+					  </div>
+
+				  </div><!-- end gal-cards-container -->
+				
+					
+
+					
+				</div><!-- ends gallery flex box -->
+			</section>
+			
+			
+			
+			
+			
+			
+		</main>
+		<footer><h3>Footer</h3></footer>
+	</body>
+</html>
