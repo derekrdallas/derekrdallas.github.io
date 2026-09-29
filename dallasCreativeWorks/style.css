@@ -78,14 +78,14 @@ font-weight: 400;
 	
 	/* <weight>: Use a value from 300 to 700
  <uniquifier>: Use a unique and descriptive class name */
-  background-color: #244b7b;
+background-color: #244b7b;
 color:white;
-	font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-	font-size:1.5em;
-  font-style: normal;
-	padding:16px;
+font-family: "Quicksand", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-size:1.5em;
+font-style: normal;
+padding:16px;
 }
 
 
@@ -94,3 +94,28 @@ background-color:white;
 box-shadow: 5px 5px 10px #244b7b;
 margin-right:10px;
 }
+.contact-div{
+	margin-top:150px;
+}
+
+.contact-box{
+padding:10px;	
+}
+
+.contact-box a:hover{
+ color: #F3D211;	
+}
+
+.contact-box a:visited{
+ color: #9BE3FF;	
+}
+
+
+
+
+
+
+
+
+
+
