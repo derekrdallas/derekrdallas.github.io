@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+#grid-container {
+	display: grid;
+	/*grid-template-columns: 8em 8em;*/
+	/*gap: 1.5em; */
+	grid-auto-flow:dense rows;
+}
+
+.red{
+	background-color: red;
+	width:410px;
+	height:300px;
+}
+
+.yellow{
+	background-color: yellow;
+	width:200px;
+	height:400px;
+}
+.blue{
+	background-color: cornflowerblue;
+	width:80px;
+	height:90px;
+}
+
+.orange{
+	background-color: orangered;
+	width:400px;
+	height:400px;
+}
+
+.purple{
+	background-color: mediumpurple;
+	width:50px;
+	height:150px;
+}
+.grey{
+	background-color:#444;
+	padding:20px;
+	color:#000;
+}
+
+button{
+	background-color: aqua;
+}

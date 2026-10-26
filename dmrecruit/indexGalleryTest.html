@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<!--https://www.w3schools.com/howto/howto_js_topnav_responsive.asp   -->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!-- FIXED: Added hyphens to device-width and initial-scale -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Digital Media Recruiting site</title>
+		<link rel="stylesheet" href="styles.css">
+		
+		<!-- WEBFONTS ADDED -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">		
+		
+		<script src="scripts.js" defer></script>
+	</head>
+	<body>
+	<div class="site-container">
+		
+
+		<header>
+			<!-- <div class="icon-box"></div> -->
+			
+			<nav class="navbar">
+				<ul class="responsive-flex-list">
+					<li> <a class="nav-link" href="#about" >About</a> </li>
+					<li><a class="nav-link" href="#gallery">Galleries</a></li>
+					<li><a class="nav-link" href="#courses">Courses</a></li>
+					<li><a class="nav-link" href="#future">Future</a></li>			
+					<li><a class="nav-link" href="#bookings">Bookings</a></li>			
+				</ul>			
+			</nav>		
+		</header>
+		
+		<section id="hero">
+			<!--use picture tag with media query for small screens  -->
+			<picture>
+			  <source srcset="img/herobig.webp" media="(width >= 600px)" />
+			  <img class="hero-img" src="img/herosmall.webp" alt="heroImage" />
+			</picture>		
+		</section>
+	
+		<main>			
+			<section class="grey-dark">
+				<h1><span class="oswald-h1-red">DIGITAL</span><span class="oswald-h1-blue">MEDIA</span></h1>
+			<p class="oswald-h1-subtitle">dream, draw, design, develop</p>
+			</section>
+		<!-- about section start-->
+			<section id="about" class="blue"> 
+				<h2 class="oswald-h2">About Us</h2>
+				<p class="oswald-subtitle" >The Parkland Digital Media program is focused on teaching the skills digital creators need to design and develop their own ideas into real world physical prototypes. Students will engage in the design process from initial concept, "napkin" sketches, concept design drawings, 3D modeling, to full 3D printed prototype using professional software and fused filament and stereolythography (SLA) 3D printers.</p>
+				<p class="oswald-subtitle">Student work will consist of learning foundations principles in design processes, conceptual drawing skills, 3D print hardware and materials and the basic best practices for success in 3D printing taught through small design projects which will build skills and techniques ending with the student's creation of an original functional prototype. </p>
+				
+				<div class="animation-gallery-box"><!-- animation -gallery-box start -->
+			
+					
+					
+					
+				
+			</div><!-- animation -gallery-box end -->
+			</section> 	
+		<!-- about section end -->
+			
+			
+			
+			
+			
+			<section id="gallery" class="red">
+				<h2 class="oswald-h2">Image Gallery</h2>
+				<p class="oswald-subtitle">In this section I will have a brief description of the skills and a simple gallery </p>
+				
+				<div class="gallery-flex-box"><!-- Begin gallery flex box -->
+					
+					<!-- start slideshow content from w3schools-->
+				<div class="slideshow-container">
+
+					<div class="mySlides fade">
+					  <div class="numbertext">1 / 10</div>
+					  <img src="img/RenderedMooshroom2.jpg" style="width:100%">
+					  <div class="text">Image 1</div>
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">2 / 10</div>
+					  <img src="img/aBansalProj3.jpg" style="width:100%">
+					  <div class="text">Image 2</div>
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">3 / 10</div>
+					  <img src="img/render7UV.jpg" style="width:100%">
+					  <div class="text">Image 3</div>
+					</div>
+					
+					<!-- ----------- -->
+					
+					<div class="mySlides fade">
+					  <div class="numbertext">4 / 10</div>
+					  <img src="img/cHockingCsc187realpt2Both.png" style="width:100%">
+					  <div class="text">Image 4</div>
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">5 / 10</div>
+					  <img src="img/bBailenCsc187realcomp.jpg" style="width:100%">
+					  <div class="text">Image 5</div>
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">6 / 10</div>
+					  <img src="img/vLeonardCsc187RealizationPart2Compare.jpg" style="width:100%">
+					  <div class="text">Image 6</div>
+					</div>
+					<!-- ---------------------------  -->
+					<div class="mySlides fade">
+					  <div class="numbertext">7 / 10</div>
+					  <img src="img/Project 3.jpg" style="width:100%">
+					  <div class="text">Image 7</div>
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">8 / 10</div>
+					  <img src="img/tGowansCsc187realPt2(3).jpg" style="width:100%">
+					  <div class="text">Image 8</div>
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">9 / 10</div>
+					  <img src="img/nintendo 2.jpg" style="width:100%">
+					  <div class="text">Image 9</div>
+					</div>
+					
+					<!-- ----------- -->
+					
+					<div class="mySlides fade">
+					  <div class="numbertext">10 / 10</div>
+					  <img src="img/tPhetchareune_Csc187_Project3_RealPt3_BothObjects.jpg" style="width:100%">
+					  <div class="text">Image 10</div>
+					</div>
+					
+					
+					
+
+					<a class="prev" onclick="plusSlides(-1)">❮</a>
+					<a class="next" onclick="plusSlides(1)">❯</a>
+
+					</div>
+					<br>
+
+					<div style="text-align:center">
+					  <span class="dot" onclick="currentSlide(1)"></span> 
+					  <span class="dot" onclick="currentSlide(2)"></span> 
+					  <span class="dot" onclick="currentSlide(3)"></span>
+					  <span class="dot" onclick="currentSlide(4)"></span> 
+					  <span class="dot" onclick="currentSlide(5)"></span> 
+					  <span class="dot" onclick="currentSlide(6)"></span>
+					  <span class="dot" onclick="currentSlide(7)"></span>
+					  <span class="dot" onclick="currentSlide(8)"></span> 
+					  <span class="dot" onclick="currentSlide(9)"></span> 
+					  <span class="dot" onclick="currentSlide(10)"></span> 	
+					</div>	
+					
+					
+					
+					<!-- end slide show cotent from w3schools-->
+					
+
+					
+				</div><!-- ends gallery flex box -->
+			</section>
+			
+			<section class="blue"> <!-- animation video sectio start -->
+				<h2 class="oswald-h2">2D &amp; 3D ANIMATION GALLERY</h2>
+				<p id="test"  >Get Animated!</p>
+				
+				<div class="animation-gallery-box"><!-- animation -gallery-box start -->
+					<div class="iframe-container">
+						<iframe class="iframe-style" width="1337" height="752" src="https://www.youtube.com/embed/qoO4KwgwQv0" title="Parkland College Digital Media 2D Animation student Gallery" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						
+						<div class="iframe-info-box">
+							<p class="student-name">2D Animation</p>
+							<p class="project-name">Student work</p>
+							<p class="course-name">CSC 186</p>
+						
+						</div> <!-- iframe-info-box-->
+					</div><!-- iframe-container end -->
+					
+					
+					<div class="iframe-container">
+						<iframe class="iframe-style" width="1337" height="752" src="https://www.youtube.com/embed/qoO4KwgwQv0" title="Parkland College Digital Media 2D Animation student Gallery" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						
+						<div class="iframe-info-box">
+							<p class="student-name">3D Animation</p>
+							<p class="project-name">Student work</p>
+							<p class="course-name">CSC 188</p>
+						
+						</div> <!-- iframe-info-box-->
+					</div><!-- iframe-container end -->
+					
+					
+					
+				
+			</div><!-- animation -gallery-box end -->
+			</section> <!-- animation video sectio end -->
+			
+			
+			<section id="model-gallery" class="red">
+				<h2>Prototype Gallery</h2>
+				<p class="subTitle">Example Prototypes and project details</p>			
+				
+				<div class="gallery-flex-box">
+					<div class="gal-cards-container">
+								
+					<!-- add in the sketchFab info start-->
+						<div class="sketchfab-embed-wrapper"> 
+							<iframe title="Hurricane Beard and Mustache comb" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/849e2504c63049799f79a78e085a65c6/embed"> </iframe> 
+							<p style="font-size: 13px; font-weight: normal; margin: 5px; margin-bottom:10px; color: #4A4A4A;"> 
+								<a href="https://sketchfab.com/3d-models/hurricane-beard-and-mustache-comb-849e2504c63049799f79a78e085a65c6" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Hurricane Beard and Mustache comb </a><br> 
+								by <a href="https://sketchfab.com/ddallas" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Derek Dallas </a> on <a href="https://sketchfab.com" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>				
+						
+					<!-- add in the sketchFab info end -->	
+					
+					  <div class="card">							
+					    <p class="student-name">CSC 187</p>
+						<p class="project-name">3D Animation 1</p>
+						<p class="course-name">Realism Project</p>
+					  </div>					
+
+				  </div><!-- end gal-cards-container -->
+				
+					<div class="gal-cards-container">
+								
+					<!-- add in the sketchFab info start-->
+						<div class="sketchfab-embed-wrapper"> <iframe title="Vs13.6 The Razor: complete redesign:" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/b4a95601caad4e57814a7e79f268a679/embed"> </iframe> 
+							<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/vs136-the-razor-complete-redesign-b4a95601caad4e57814a7e79f268a679" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Vs13.6 The Razor: complete redesign: </a><br>
+								by <a href="https://sketchfab.com/ddallas" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Derek Dallas </a> on <a href="https://sketchfab.com" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>				
+						
+					<!-- add in the sketchFab info end -->	
+					
+					  <div class="card">							
+					    <p class="student-name">CSC 187</p>
+						<p class="project-name">3D Animation 1</p>
+						<p class="course-name">Realism Project</p>
+					  </div>					
+
+				  </div><!-- end gal-cards-container -->
+
+					
+				</div><!-- ends gallery flex box -->
+			</section>
+			
+			
+			
+			
+			
+			
+		</main>
+	  <footer><h3>Footer</h3></footer>
+	</div> <!-- end site container div -->	
+	</body>
+</html>
