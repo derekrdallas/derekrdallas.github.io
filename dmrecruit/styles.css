@@ -133,15 +133,16 @@ main{
 
 section{
 	border-radius: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 20px;
 	/* padding:10px; */
 }
 
 footer{
-	background-color:#000;
+	background-color:#ef4023;
 	color:white;
-	height:140px;
-	padding:0px;
+	height:auto;
+	padding:10px;
+	margin-top:0px;
 }
 
 
@@ -340,7 +341,7 @@ h2{
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  margin-top:10px;
+  margin-top:-30px;
   font-size: 1.5rem;
 }
 
@@ -373,6 +374,55 @@ h2{
   margin-top:-35px;
   font-size: 1.5rem;
 }
+
+/* contact type styling */
+
+.contact-h2 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500; /* 200- 700 */
+  font-style: normal;
+  font-size: 1.7rem;
+  text-shadow: 2px 4px 2px #000;
+}
+
+.contact-name {
+  color:#000;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* 200- 700 */
+  font-style: normal;
+  font-size: 1.5rem;
+  /*margin-top: -30px; */
+  text-indent: 40px;
+}
+
+.contact-title{
+  color:#000;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:300; /* 200- 700 */
+  font-style: normal;
+  font-size: 1.25rem;
+  margin-top: -30px;
+  text-indent: 60px;
+}
+
+.contact-email {
+  color:#000;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin-top:-25px;
+  font-size: 1.0rem;
+  text-indent: 60px;
+  
+}
+
+
+
+
 
 
 
@@ -493,3 +543,33 @@ th {
   background-color: #4eb748;
   color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
